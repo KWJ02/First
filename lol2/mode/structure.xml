@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<structureinfo>
+	
+	<mapstructure>
+		<structureImg1>nexus.png</structureImg1>
+		<structureName1>넥서스</structureName1>
+		<structureRole1>소환사의 협곡에서 심장부의 역할을 하며, 미니언이라는 유닛들을 지속적으로 소환한다.</structureRole1>
+	</mapstructure>
+	
+	<mapstructure>
+		<structureImg2>inhibitor.png</structureImg2>
+		<structureName2>억제기</structureName2>
+		<structureRole2>상대 넥서스에서 슈퍼미니언이 소환되지 못하도록 억제하는 구조물이다. 파괴되면 상대 슈퍼미니언이 소환되어 공격로를 압박한다.</structureRole2>
+	</mapstructure>	
+	
+	<mapstructure>
+		<structureImg3>turret.png</structureImg3>
+		<structureName3>포탑</structureName3>
+		<structureRole3>적으로부터 억제기와 넥서스를 보호하기 위한 구조물로, 고정데미지가 들어간다.</structureRole3>
+	</mapstructure>
+	
+	
+</structureinfo>

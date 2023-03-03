@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<liftinfo>
+	<lineposition>
+	<top>탑(Top)</top>
+	<jungle>정글(Jungle)</jungle>
+	<mid>미드(Mid)</mid>
+	<bottom>바텀(Bottom)</bottom>
+	</lineposition>
+	
+	<lineposition>
+	<top>맵의 윗부분에서 서로 맞닿는 경로</top>
+	<jungle>몬스터와 오브젝트를 챙기며 다른라인에 간섭하는 라인이며,</jungle>
+	<mid>맵의 가운데로 가로지르는 경로</mid>
+	<bottom>맵의 아랫부분에서 서로 맞닿는 경로</bottom>
+	</lineposition>
+	
+	<lineposition>
+	<top>주로 직업군이 전사나 탱커들이 서는 라인이다.</top>
+	<jungle>전사나 암살자,마법사,탱커 등 여러 직업군들이 서는 라인이다.</jungle>
+	<mid>주로 직업군이 암살자나 마법사들이 서는 라인이다.</mid>
+	<bottom>주로 직업군이 원거리딜러,탱커,마법사들이 서는 라인이다.</bottom>
+	</lineposition>
+	
+	<lineposition>
+	<bottom>원거리 딜러와 서포터가 동행하는 라인이다.</bottom>
+	</lineposition>
+</liftinfo>
+	

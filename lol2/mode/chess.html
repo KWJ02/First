@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>리그오브레전드 백과사전</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script>
+    	$(document).ready(function(){
+    		$('#chess').fadeOut(0, function(){
+    			$('#chess').fadeIn(2000);
+    		});
+    	});
+    </script>
+    
+    
+    <style>
+    	#title1 {text-align : center;}
+    	
+    	
+    	#chess { bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:100%; height:100%;}
+            
+    	#image3 {margin: 0; padding: 0;
+    		width:200px; height:200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;}
+    </style>
+    
+</head>
+<body>
+
+<!-- 모드와 룰설명 -->
+<div data-role="page" id="lift">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="../lol.html#home" data-ajax="false" class="ui-btn-left">홈</a>
+        <h1>게임 모드</h1>
+        
+        	<div data-role="navbar" data-theme="b">
+       	   		<ul>
+        	        <li><a href="lift.html#lift" data-ajax="false">소환사의 협곡</a></li>
+        	        <li><a href="abyss.html#abyss" data-ajax="false">칼바람의 나락</a></li>
+            	    <li><a href="chess.html#chess" data-ajax="false" class="ui-btn-active">전략적 팀 전투</a></li>
+      	          <li><a href="event.html#event"data-ajax="false">기타 이벤트 모드</a></li>
+        	    </ul>
+        	</div>
+    	</div> <!-- 헤더밑에 냅바로 부메뉴 -->
+    
+    
+    
+    <div id="content" data-role="content" style="text-align:center">
+    	<div id="chess"><img id="image3" src="chess.png"></img></div>
+    	<h1 id="title1">전략적 팀 전투</h1>
+
+
+
+
+
+
+
+
+    <div data-role="footer" data-position="fixed" data-theme="b"> <!-- 다른 주메뉴로 옮겨갈수있는 경로 -->
+        <div data-role="navbar">
+        	<ul>
+        	    <li><a href="../champion/champion.html#championPage" data-ajax="false">챔피언</a></li>
+        	    <li><a href="../item/item.html#itemPage" data-ajax="false">아이템</a></li>
+        	    <li><a href="../_chess/lolchess.html#lift" data-ajax="false">전략적 팀 전투</a></li>
+     	   </ul>
+        </div>
+   	 </div>
+</div> <!-- 전략적 팀 전투 시작 페이지 -->
+</body>
+</html>

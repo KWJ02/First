@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/css" href="championXml.css"?> 
+<championinfo>
+	<champion>
+		<championName>가렌</championName>
+		<roleGroup>전사</roleGroup>
+		<area>데마시아</area>
+		<line>탑</line>
+		<championFace>images/champion/Garen.png</championFace>
+		<championId>garen</championId>
+		<dialogue>내 검과 심장은 데마시아의 것이다!</dialogue>
+		<dialogueSound>voice/garen.mp3</dialogueSound>
+		<Pimg>images/skills/garen/garenP.png</Pimg>
+		<Pname>인내심</Pname>
+		<Pinfo>가렌이 8초 동안 피해를 입지 않거나 적의 스킬에 맞지 않으면 5초마다 최대 체력의 일정 비율 만큼 회복합니다.</Pinfo>
+		<Qimg>images/skills/garen/garenQ.png</Qimg>
+		<Qname>결정타</Qname>
+		<Qinfo>가렌에게 적용된 모든 둔화 효과가 제거되고 일정 시간 동안 이동 속도가 35% 상승합니다. 다음 기본 공격은 1.5초 동안 침묵 시키고 추가 물리 피해를 입힙니다.</Qinfo>
+		<Wimg>images/skills/garen/garenW.png</Wimg>
+		<Wname>용기</Wname>
+		<Wpassive>유닛을 처치하면 영구적으로 0.2의 방어력과 0.2의 마법 저항력이 부여되어 최대 30까지 증가합니다.&lt;br&gt; 최대 중첩 시 가렌의 추가 방어력 및 추가 마법 저항력이 10% 증가합니다.</Wpassive>
+		<Wactive>가렌이 일정 시간 동안 용기백배하여 받는 피해가 30% 감소합니다.</Wactive>
+		<Eimg>images/skills/garen/garenE.png</Eimg>
+		<Ename>심판</Ename>
+		<Einfo>가렌이 3초 동안 검을 들고 빠르게 회전하여 물리피해를 여러 차례 입힙니다. 가장 가까운 적은 타격을 받을 때마다 25%의 추가 피해를 입습니다. 공격에 6번 맞은 챔피언은 6초 동안 방어력이 25% 감소합니다. 공격 횟수는 아이템과 레벨에 기반한 공격 속도에 비례 합니다.
+		</Einfo>
+		<Eplus>이 스킬에는 치명타가 적용되어 58%의 추가 피해를 입힐 수 있습니다.(가장 가까운 대상에게는 피해량이 증가합니다.) 정글 몬스터에게는 150%의 피해를 입힙니다. 스킬을 빨리 취소하면 남은 재사용 대기시간이 감소합니다.</Eplus>
+		<Rimg>images/skills/garen/garenR.png</Rimg>
+		<Rname>데마시아의 정의</Rname>
+		<Rinfo>가렌이 적을 처단할 데마시아의 힘을 소환하여 잃은 체력의 일정 비율에 해당하는 고정 피해를 입힙니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>누누와월럼프</championName>
+		<roleGroup>탱커</roleGroup>
+		<area>프렐요드</area>
+		<line>정글</line>
+		<championFace>images/champion/Nunu.png</championFace>
+		<championId>nunu</championId>
+		<dialogue>모험은 역시 친구랑 같이해야 신나는 법!</dialogue>
+		<dialogueSound>voice/nunu.mp3</dialogueSound>
+		<Pimg>images/skills/nunu/nunuP.png</Pimg>
+		<Pname>프렐요드의 부름</Pname>
+		<Pinfo>챔피언, 대형 정글 몬스터, 또는 구조물에 피해를 입히면 4초 동안 누누와 윌럼프, 주변 아군의 공격 속도가 20% 증가하고 이동 속도가 10% 증가합니다.&lt;br&gt; &lt;br&gt;
+강화 효과가 지속되는 동안 기본 공격 시 주변 적들에게 최대 공격력의 30%의 추가 물리 피해를 입힙니다</Pinfo>
+		<Pplus>챔피언과 구조물을 공격하면 강화 효과의 범위가 증가합니다.
+프렐요드의 부름은 대상 하나당 10초에 한 번씩 발동되며 새로운 대상으로 인해 다시 발동될 경우 총 지속 시간이 늘어납니다.
+강화 효과는 해당 효과를 가장 잘 활용할 수 있는 챔피언을 대상으로 지정합니다.(사거리: 1500)</Pplus>
+		<Qimg>images/skills/nunu/nunuQ.png</Qimg>
+		<Qname>잡아먹기</Qname>
+		<Qinfo>윌럼프가 적을 물어뜯습니다. 미니언이나 정글 몬스터에게 사용 시 고정 피해를 입히고 체력을 회복합니다.
+챔피언에게 사용 시 마법 피해를 입히고 체력을 회복합니다.&lt;br&gt; &lt;br&gt;
+누누와 윌럼프의 체력이 50% 미만일 경우 회복량이 50% 증가합니다.</Qinfo>
+		<Wimg>images/skills/nunu/nunuW.png</Wimg>
+		<Wname>데굴데굴 눈덩이!</Wname>
+		<Winfo>누누와 윌럼프가 굴릴수록 크기와 속도가 증가하는 눈덩이를 생성합니다.
+눈덩이는 적에게 피해를 입히고 공중으로 띄워 올립니다.&lt;br&gt; &lt;br&gt;
+눈덩이를 굴리는 동안 회전 속도가 느려지지만 계속 회전하면 회전 속도가 점점 증가합니다.
+눈덩이가 챔피언이나 대형 몬스터, 벽에 충돌하면 마법 피해를 입히고 0.5~1.25초 동안 대상을 롤아이콘-군중제어 에어본공중으로 띄워 올립니다. 피해량은 눈덩이를 굴린 거리에 비례합니다.</Winfo>
+		<Wuse>재사용하여 눈덩이를 일찍 굴려 보낼 수 있습니다.</Wuse>
+		<Eimg>images/skills/nunu/nunuE.png</Eimg>
+		<Ename>눈덩이 팡팡팡</Ename>
+		<Einfo>누누가 눈덩이 3개를 던져 총 마법 피해를 입힙니다. 눈덩이 3개를 모두 맞은 적은 1초 동안 둔화됩니다.
+이 스킬은 최대 2회까지 재사용할 수 있습니다.
+3초 후 누누가 눈덩이에 맞아 둔화된 주변 적들을 모두 속박하고 추가 마법 피해를 입힙니다.</Einfo>
+		<Eplus>누누는 이 스킬로 각 적을 한 번씩만 둔화시킬 수 있습니다.</Eplus>
+		<Rimg>images/skills/nunu/nunuR.png</Rimg>
+		<Rname>절대 영도</Rname>
+		<Rinfo>누누와 윌럼프가 최대 3초 동안 강력한 눈보라를 생성합니다. 눈보라 안에 있는 적은 50% 둔화되며 지속 시간 동안 둔화 정도는 95%까지 증가합니다. 누누와 윌럼프는 보호막을 얻으며, 이 보호막은 이후 3초에 걸쳐 서서히 사라집니다.&lt;br&gt; &lt;br&gt;
+			눈보라가 끝나면 폭발하여 범위 내에 있는 적에게 정신 집중 시간에 비례해 마법 피해를 입힙니다.</Rinfo>
+		<Ruse>재사용하여 눈보라를 일찍 끝낼 수 있습니다.</Ruse>
+	</champion>
+	<champion>
+		<championName>다리우스</championName>
+		<roleGroup>전사</roleGroup>
+		<area>녹서스</area>
+		<line>탑</line>
+		<championFace>images/champion/Darius.png</championFace>
+		<championId>darius</championId>
+		<dialogue>오직 나만이 승리로 이끌 수 있다.</dialogue>
+		<dialogueSound>voice/darius.mp3</dialogueSound>
+		<Pimg>images/skills/darius/dariusP.png</Pimg>
+		<Pname>과다출혈</Pname>
+		<Pinfo>다리우스의 기본 공격과 공격 스킬이 대상에게 과다출혈을 일으켜 5초에 걸쳐 물리 피해를 입힙니다. 이 효과는 최대 5번까지 중첩이 쌓입니다.&lt;br&gt; &lt;br&gt;
+			적이 최대로 중첩되거나 녹서스의 단두대 스킬로 처치되면, 5초 동안 다리우스의 공격력이 증가하고 모든 기본 공격과 스킬 공격 사용 시 과다출혈 중첩이 5번 적용됩니다.</Pinfo>
+		<Pplus>과다출혈은 정글 몬스터에게 300%의 피해를 입힙니다.</Pplus>
+		<Qimg>images/skills/darius/dariusQ.png</Qimg>
+		<Qname>학살</Qname>
+		<Qinfo>다리우스가 도끼를 들어 올린 후 주위로 휘둘러 도끼날로는 물리 피해, 도끼 자루로는 35%의 피해를 입힙니다. 도끼 자루에 맞은 적은 과다출혈이 중첩되지 않습니다.&lt;br&gt; &lt;br&gt;
+다리우스는 도끼날로 맞힌 적 챔피언과 대형 몬스터 하나당 잃은 체력의 13%가 회복됩니다. 최대 39%까지 회복됩니다.</Qinfo>
+		<Wimg>images/skills/darius/dariusW.png</Wimg>
+		<Wname>마비의 일격</Wname>
+		<Winfo>다리우스의 다음 기본 공격은 추가 물리 피해를 입히고, 1초 동안 대상을 둔화시킵니다.&lt;br&gt;
+이 스킬로 대상을 처치하면 소모한 마나를 되돌려받고, 재사용 대기시간이 50% 감소합니다.</Winfo>
+		<Eimg>images/skills/darius/dariusE.png</Eimg>
+		<Ename>포획</Ename>
+		<Epassive>다리우스의 방어구 관통력이 상승합니다.</Epassive>
+		<Eactive>다리우스가 도끼를 걸어 롤아이콘-군중제어 넉백끌어당기고 롤아이콘-군중제어 에어본공중으로 띄워 올린 후 1초 동안 40% 둔화시킵니다.</Eactive>
+		<Rimg>images/skills/darius/dariusR.png</Rimg>
+		<Rname>녹서스의 단두대</Rname>
+		<Rinfo>다리우스가 적에게 뛰어올라 치명적 타격을 가하여 고정 피해를 입힙니다. 대상의 과다출혈 중첩 하나당 20%의 피해를 추가로 입힙니다. &lt;br&gt; &lt;br&gt;
+이 스킬로 대상을 처치할 경우, 다리우스가 20초 안에 이 스킬을 재사용할 수 있습니다. 스킬 레벨이 3이 되면 이 스킬을 사용할 때마다 마나가 소모되지 않으며 챔피언을 처치하면 재사용 대기시간이 완전히 초기화됩니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>다이애나</championName>
+		<roleGroup>암살자</roleGroup>
+		<area>타곤</area>
+		<line>정글</line>
+		<championFace>images/champion/Diana.png</championFace>
+		<championId>diana</championId>
+		<dialogue>새로운 달이 떠오르고 있다.</dialogue>
+		<dialogueSound>voice/diana.mp3</dialogueSound>
+		<Pimg>images/skills/diana/dianaP.png</Pimg>
+		<Pname>서늘한 달빛</Pname>
+		<Pinfo>다이애나의 공격 속도가 증가합니다. 스킬을 사용한 후에는 3초 동안 추가 공격 속도가 세 배까지 증가합니다.&lt;br&gt;
+3번째 기본 공격마다 주위 적들을 베어 추가 마법 피해를 입힙니다.</Pinfo>
+		<Pplus>서늘한 달빛 검은 몬스터에게 300%의 피해를 입힙니다.</Pplus>
+		<Qimg>images/skills/diana/dianaQ.png</Qimg>
+		<Qname>초승달 검기</Qname>
+		<Qinfo>다이애나가 달 에너지를 휘어지게 발사하여 마법 피해를 입히고 3초 동안 달빛으로 표식을 남깁니다.&lt;br&gt;&lt;br&gt;
+달빛은 은신 상태가 아닌 적을 드러냅니다.</Qinfo>
+		<Wimg>images/skills/diana/dianaW.png</Wimg>
+		<Wname>은빛 가호</Wname>
+		<Winfo>다이애나가 5초 동안 주위를 돌면서 닿으면 폭발하여 각각 마법 피해를 입히는 구체를 세 개 생성합니다. 최대 세 배의 피해를 입힙니다.&lt;br&gt;&lt;br&gt;
+같은 시간 동안 다이애나가 보호막도 얻습니다. 마지막 구체가 폭발하면 동일한 피해를 흡수하는 보호막을 추가로 얻고 지속 시간이 초기화됩니다.</Winfo>
+		<Eimg>images/skills/diana/dianaE.png</Eimg>
+		<Ename>월광 쇄도</Ename>
+		<Einfo>다이애나가 복수심에 불타는 달이 되어 적에게 돌진하고 마법 피해를 입힙니다. 대상이 달빛 효과를 받고 있으면 이 스킬의 재사용 대기시간이 초기화됩니다.</Einfo>
+		<Rimg>images/skills/diana/dianaR.png</Rimg>
+		<Rname>달빛 낙하</Rname>
+		<Rinfo>다이애나가 주위 적들을 드러내 롤아이콘-군중제어 넉백끌어당긴 다음 2초 동안 둔화시킵니다.&lt;br&gt;&lt;br&gt;
+최소 한 명의 적 챔피언에게 적중하면 다이애나가 달을 불러내어 마법 피해+추가로 끌어당기는 챔피언 하나당 추가 피해에 해당하는 피해를 입힙니다. 최대 5중첩의 피해를 추가로 입힙니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>라이즈</championName>
+		<roleGroup>마법사</roleGroup>
+		<area>룬테라</area>
+		<line>미드</line>
+		<championFace>images/champion/Ryze.png</championFace>
+		<championId>ryze</championId>
+		<dialogue>대재앙에 한발 앞서가는 거다!</dialogue>
+		<dialogueSound>voice/ryze.mp3</dialogueSound>
+		<Pimg>images/skills/ryze/ryzeP.png</Pimg>
+		<Pname>비전 연마</Pname>
+		<Pinfo>라이즈의 최대 마나량이 주문력의 10%만큼 증가합니다. 스킬 사용 시 추가 마나에 비례하여 추가 피해를 입힙니다.</Pinfo>
+		<Qimg>images/skills/ryze/ryzeQ.png</Qimg>
+		<Qname>과부화</Qname>
+		<Qpassive>룬 감옥과 주문 전이 사용 시 이 스킬의 재사용 대기시간이 초기화되고 4초 동안 룬이 충전됩니다. 룬은 최대 2개까지 충전됩니다.</Qpassive>
+		<Qactive>돌풍을 발사하여 처음으로 맞힌 적에게 마법 피해를 입힙니다. 대상에게 전이 표식이 있으면 과부하가 표식을 소모하여 증가한 피해를 입히고 전이 표식이 있는 주변 적에게 튕깁니다.&lt;br&gt;&lt;br&gt;
+라이즈가 룬을 전부 방출합니다. 룬이 2개 충전되면 2초 동안 이동 속도가 상승합니다.</Qactive>
+		<Wimg>images/skills/ryze/ryzeW.png</Wimg>
+		<Wname>룬 감옥</Wname>
+		<Winfo>마법 피해를 입히고 1.5초 동안 35% 둔화시킵니다. 전이 표식이 있는 대상에게는 표식을 소모하여 둔화시키는 대신 속박시킵니다.</Winfo>
+		<Eimg>images/skills/ryze/ryzeE.png</Eimg>
+		<Ename>주문 전이</Ename>
+		<Einfo>라이즈가 구체를 던져 마법 피해를 입히고 대상과 주변 적에게 4초 동안 전이를 적용합니다. 전이 표식이 남아 있는 적들은 주변에 전이 표식을 퍼뜨립니다.</Einfo>
+		<Rimg>images/skills/ryze/ryzeR.png</Rimg>
+		<Rname>공간 왜곡</Rname>
+		<Rpassive>과부하가 전이 표식이 있는 적에게 추가 피해를 입힙니다.</Rpassive>
+		<Ractive>다른 위치로 이동하는 차원문을 엽니다. 2초 후, 차원문 근처의 모든 아군이 해당 위치로 순간이동합니다.</Ractive>
+		<Rplus>이동 불가 상태나 스킬 사용 불가 상태가 되면 차원문이 취소됩니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>럭스</championName>
+		<roleGroup>마법사</roleGroup>
+		<area>데마시아</area>
+		<line>서폿</line>
+		<championFace>images/champion/Lux.png</championFace>
+		<championId>lux</championId>
+		<dialogue>어디 한번 길을 밝혀보죠!</dialogue>
+		<dialogueSound>voice/lux.mp3</dialogueSound>
+		<Pimg>images/skills/lux/luxP.png</Pimg>
+		<Pname>광채</Pname>
+		<Pinfo>럭스의 피해를 주는 스킬이 적에게 6초 동안 표식을 남깁니다. 럭스의 기본 공격은 이 표식을 소모해 마법 피해를 입힙니다.&lt;br&gt;&lt;br&gt;
+&lt;b&gt;최후의 섬광&lt;/b&gt;은 적중 시 표식을 소모한 후 재적용합니다.</Pinfo>
+		<Qimg>images/skills/lux/luxQ.png</Qimg>
+		<Qname>빛의 속박</Qname>
+		<Qinfo>럭스가 빛의 구체를 발사하여 처음 적중한 적 둘을 2초 동안 속박하고 각각 마법 피해를 입힙니다.</Qinfo>
+		<Wimg>images/skills/lux/luxW.png</Wimg>
+		<Wname>프리즘 보호막</Wname>
+		<Winfo>럭스가 마법봉을 던져 봉에 닿은 모든 아군에게 보호막을 씌웁니다. 마법봉은 돌아올 때도 똑같이 보호막을 부여합니다</Winfo>
+		<Wplus>두 번의 보호막은 중첩될 수 있습니다.</Wplus>
+		<Eimg>images/skills/lux/luxE.png</Eimg>
+		<Ename>광휘의 특이점</Ename>
+		<Einfo>럭스가 빛의 영역을 생성해 적들을 둔화시키고 해당 지역을 드러냅니다. 5초가 지나거나 스킬을 재사용하면 폭발하여 마법 피해를 입히고 추가로 1초 동안 둔화시킵니다.</Einfo>
+		<Rimg>images/skills/lux/luxR.png</Rimg>
+		<Rname>최후의 섬광</Rname>
+		<Rinfo>럭스가 눈부신 광선을 발사하여 일직선상에 있는 모든 적에게 마법 피해를 입힙니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>레오나</championName>
+		<roleGroup>탱커</roleGroup>
+		<area>타곤</area>
+		<line>서폿</line>
+		<championFace>images/champion/Leona.png</championFace>
+		<championId>leona</championId>
+		<dialogue>새벽이 밝았습니다!</dialogue>
+		<dialogueSound>voice/leona.mp3</dialogueSound>
+		<Pimg>images/skills/leona/leonaP.png</Pimg>
+		<Pname>햇빛</Pname>
+		<Pinfo>레오나의 스킬은 적에게 1.5초간 표식을 남깁니다. 아군 챔피언이 공격할 경우 표식을 터트리면서 적에게 마법 피해를 추가로 입힙니다.</Pinfo>
+		<Qimg>images/skills/leona/leonaQ.png</Qimg>
+		<Qname>여명의 방패</Qname>
+		<Qinfo>레오나가 다음 기본 공격 시 1초 동안 적을 기절시키고 추가 마법 피해를 입힙니다.</Qinfo>
+		<Qplus>6초 안에 공격하지 않으면 스킬 효과가 사라집니다.</Qplus>
+		<Wimg>images/skills/leona/leonaW.png</Wimg>
+		<Wname>일식</Wname>
+		<Winfo>레오나가 방패를 들어 받는 피해량을 감소시키고, 3초 동안 방어력과 마법 저항력을 얻습니다. 잠시 후, 방패가 폭발하며 주변 적들에게 마법 피해를 입힙니다. 적이 한 명이라도 공격에 적중당한 경우, 방어력과 마법 저항력의 증가 효과가 3초 더 유지됩니다.</Winfo>
+		<Wplus>50% 아래의 공격에는 피해량 감소 효과가 적용되지 않습니다.</Wplus>
+		<Eimg>images/skills/leona/leonaE.png</Eimg>
+		<Ename>천공의 검</Ename>
+		<Einfo>레오나가 빛의 검을 날려 마법 피해를 입힙니다. 마지막으로 맞은 챔피언은 0.5초 동안 속박되며 레오나가 그쪽으로 돌격합니다.</Einfo>
+		<Rimg>images/skills/leona/leonaR.png</Rimg>
+		<Rname>흑점 폭발</Rname>
+		<Rinfo>태양 에너지를 소환하여 눈부신 광선으로 적에게 마법 피해를 입히고 1.5초 동안 80%만큼 둔화시킵니다. 폭발의 중앙에 있는 적들은 둔화되지 않고 기절합니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>마스터이</championName>
+		<roleGroup>암살자</roleGroup>
+		<area>아이오니아</area>
+		<line>정글</line>
+		<championFace>images/champion/MasterYi.png</championFace>
+		<championId>masterYi</championId>
+		<dialogue>나의 검은 당신의 것이오.</dialogue>
+		<dialogueSound>voice/masterYi.mp3</dialogueSound>
+		<Pimg>images/skills/masterYi/masterYiP.png</Pimg>
+		<Pname>2연속 공격</Pname>
+		<Pinfo>매 4번째 기본 공격마다 마스터 이가 2번 연속 공격합니다. 연속 공격의 두 번째 공격은 50%의 물리 피해를 입힙니다.
+</Pinfo>
+		<Pplus>두 번째 공격은 기본 공격으로 간주되어 치명타가 적용되고 적중 시 효과가 발동됩니다.</Pplus>
+		<Qimg>images/skills/masterYi/masterYiQ.png</Qimg>
+		<Qname>일격 필살</Qname>
+		<Qinfo>마스터 이가 대상으로 지정할 수 없는 상태가 되어 순간이동한 후 대상 주변 적들을 순식간에 공격합니다. 공격이 4회 적중한 후 적중하는 모든 공격은 적에게 물리 피해를 입힙니다.&lt;br&gt;
+이 스킬은 다른 대상이 없다면 같은 적을 연속으로 공격하며 추가 타격으로 25%의 물리 피해를 입힙니다.</Qinfo>
+		<Qplus>추가 타격에는 25%의 적중 시 효과가 적용됩니다.
+치명타가 적용될 수 있으며, 이 경우 160%의 피해를 입힙니다.
+정글 몬스터에게 추가 피해를 입힙니다.&lt;br&gt;
+기본 공격 시 스킬의 재사용 대기시간이 1초 감소합니다.&lt;br&gt;
+일격 필살을 통한 타격으로는 이 스킬의 재사용 대기시간이 줄어드거나 2연속 공격의 적중 시 효과가 중첩되지 않습니다.
+공격이 끝나면 처음 지정한 대상 주변에 다시 나타납니다.</Qplus>
+		<Wimg>images/skills/masterYi/masterYiW.png</Wimg>
+		<Wname>명상</Wname>
+		<Winfo>마스터 이가 정신을 집중해 4초 동안 체력을 회복하고 입는 피해를 감소시킵니다. 회복량은 마스터 이가 잃은 체력에 비례해 최대 100%까지 증가합니다.</Winfo>
+		<Wplus>정신을 집중하는 동안 2연속 공격 중첩을 얻고 우주류 검술과 최후의 전사의 남은 지속 시간이 일시 정지됩니다.
+피해량 감소 효과가 구조물 상대로는 절반으로 감소합니다. 정신 집중이 끝난 후에는 효과가 감소하여 0.25초 동안 유지됩니다.</Wplus>
+		<Eimg>images/skills/masterYi/masterYiE.png</Eimg>
+		<Ename>우주류 검술</Ename>
+		<Einfo>마스터 이의 기본 공격이 5초 동안 고정 피해를 추가로 입힙니다.</Einfo>
+		<Rimg>images/skills/masterYi/masterYiR.png</Rimg>
+		<Rname>최후의 전사</Rname>
+		<Rpassive>챔피언 처치 관여 시 마스터 이의 기본 스킬의 남은 재사용 대기시간이 70% 감소합니다.</Rpassive>
+		<Ractive>마스터 이가 무아지경에 빠져 7초 동안 이동 속도, 공격 속도를 얻고 둔화 효과에 면역됩니다. 챔피언 처치 관여 시 스킬 지속 시간이 7초 늘어납니다.</Ractive>
+	</champion>
+	<champion>
+		<championName>모르가나</championName>
+		<roleGroup>마법사</roleGroup>
+		<area>데마시아</area>
+		<line>서폿</line>
+		<championFace>images/champion/Morgana.png</championFace>
+		<championId>morgana</championId>
+		<dialogue>날개를 묶었다고 의지까지 꺾인 건 아니야.</dialogue>
+		<dialogueSound>voice/morgana.mp3</dialogueSound>
+		<Pimg>images/skills/morgana/morganaP.png</Pimg>
+		<Pname>영혼 흡수</Pname>
+		<Pinfo>모르가나가 스킬로 챔피언, 대형 미니언, 중형 및 대형 정글 몬스터에게 피해를 입히면 피해량의 20%만큼 체력을 회복합니다.</Pinfo>
+		<Qimg>images/skills/morgana/morganaQ.png</Qimg>
+		<Qname>어둠의 속박</Qname>
+		<Qinfo>모르가나가 별의 화염이 깃든 에너지를 발사하여 첫 번째로 명중한 대상을 일정 시간 동안 속박하고 마법 피해를 입힙니다.</Qinfo>
+		<Wimg>images/skills/morgana/morganaW.png</Wimg>
+		<Wname>고통의 그림자</Wname>
+		<Winfo>모르가나가 5초 동안 대상 지역을 불태워 매초 마법 피해를 입힙니다. 피해는 대상이 잃은 체력에 비례해 최대 170%까지 증가합니다.&lt;br&gt;
+이 스킬의 재사용 대기시간은 모르가나가 영혼 흡수로 체력을 회복할 때마다 5%씩 감소합니다.</Winfo>
+		<Wplus>이 스킬은 정글 몬스터에게 155%의 피해를 입힙니다.</Wplus>
+		<Eimg>images/skills/morgana/morganaE.png</Eimg>
+		<Ename>칠흑의 방패</Ename>
+		<Einfo>모르가나가 아군 챔피언에게 5초 동안 마법 피해를 흡수하는 보호막을 씌웁니다.
+보호막이 유지되는 동안  방해 및 이동 불가 효과에 면역됩니다.</Einfo>
+		<Rimg>images/skills/morgana/morganaR.png</Rimg>
+		<Rname>영혼의 족쇄</Rname>
+		<Rinfo>모르가나가 자신과 주변 적 챔피언을 사슬로 묶어 대상에게 마법 피해를 입히고 20% 둔화시킵니다. 3초가 지난 후 사슬을 벗어나지 못한 적은 추가로 마법 피해를 입고 1.5초 동안 기절합니다.&lt;br&gt;
+이 스킬을 사용하는 동안 모르가나가 사슬로 묶은 적을 향해 이동할 때 이동 속도가 증가합니다.</Rinfo>
+		<Rplus>모르가나는 이 스킬에 걸린 모든 적에 대해 절대 시야를 얻습니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>미스포츈</championName>
+		<roleGroup>원거리</roleGroup>
+		<area>빌지워터</area>
+		<line>바텀</line>
+		<championFace>images/champion/MissFortune.png</championFace>
+		<championId>missFortune</championId>
+		<dialogue>행운은 멍청이를 싫어하는 법이지.</dialogue>
+		<dialogueSound>voice/missFortune.mp3</dialogueSound>
+		<Pimg>images/skills/missFortune/missFortuneP.png</Pimg>
+		<Pname>사랑의 한 방</Pname>
+		<Pinfo>미스 포츈이 새로운 대상에게 기본 공격을 가하면 물리 피해를 추가로 입힙니다.</Pinfo>
+		<Pplus>미니언을 대상으로는 피해량이 반으로 줄어듭니다.</Pplus>
+		<Qimg>images/skills/missFortune/missFortuneQ.png</Qimg>
+		<Qname>한 발에 두 놈</Qname>
+		<Qinfo>미스 포츈이 튕기는 총알을 발사하여 적 하나와 그 뒤에 있는 다른 적에게 각각 물리 피해를 입힙니다.&lt;br&gt;
+두 번째 대상에게는 치명타를 입힐 수 있으며, 첫 번째 대상을 처치했을 경우 두 번째 대상에게는 항상 치명타가 적용됩니다.</Qinfo>
+		<Qplus>두 번 모두 적중 시 효과가 적용됩니다.</Qplus>
+		<Wimg>images/skills/missFortune/missFortuneW.png</Wimg>
+		<Wname>활보</Wname>
+		<Wpassive>5초간 피해를 받지 않으면 미스 포츈의 이동 속도가 25 증가합니다. 다음 5초간 피해를 입지 않으면 이동 속도가 최대치까지 증가합니다.</Wpassive>
+		<Wactive>이동 속도 증가 효과를 최대로 얻고 4초 동안 공격 속도가 상승합니다.</Wactive>
+		<Wplus>사랑의 한 방 발동 시 이 스킬의 재사용 대기시간이 2초 줄어듭니다.</Wplus>
+		<Eimg>images/skills/missFortune/missFortuneE.png</Eimg>
+		<Ename>총알은 비를 타고</Ename>
+		<Einfo>미스 포츈이 지정 지역에 총알을 퍼부어 시야를 밝히고 2초간 마법 피해를 입힙니다. 총알에 맞은 적은 둔화됩니다.</Einfo>
+		<Rimg>images/skills/missFortune/missFortuneR.png</Rimg>
+		<Rname>쌍권총 난사</Rname>
+		<Rinfo>미스 포츈이 3초 동안 정신 집중 상태로 총을 난사해 공격 한 차례에 물리 피해를 입힙니다.&lt;br&gt;
+이 스킬은 매회 발사 시 각각 120%의 치명타 피해를 입힐 수 있습니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>베인</championName>
+		<roleGroup>원거리</roleGroup>
+		<area>데마시아</area>
+		<line>바텀</line>
+		<championFace>images/champion/Vayne.png</championFace>
+		<championId>vayne</championId>
+		<dialogue>어둠의 빠진 자들을 사냥해 볼까?</dialogue>
+		<dialogueSound>voice/vayne.mp3</dialogueSound>
+		<Pimg>images/skills/vayne/vayneP.png</Pimg>
+		<Pname>어둠 사냥꾼</Pname>
+		<Pinfo>베인이 악당을 무자비하게 사냥합니다. 적 챔피언에게 접근할 때 이동 속도가 30 증가합니다.</Pinfo>
+		<Qimg>images/skills/vayne/vayneQ.png</Qimg>
+		<Qname>구르기</Qname>
+		<Qinfo>베인이 짧은 구르기를 합니다. 이후 기본 공격을 하면 물리 피해를 추가로 입힙니다.</Qinfo>
+		<Wimg>images/skills/vayne/vayneW.png</Wimg>
+		<Wname>은화살</Wname>
+		<Wpassive>적에게 세 번 기본 공격 또는 스킬이 적중할 때마다 대상 최대 체력에 해당하는 고정 피해를 추가로 입힙니다.</Wpassive>
+		<Wplus>최소 일정량의 피해를 입힙니다. 몬스터에게는 최대 200의 피해를 입힙니다.</Wplus>
+		<Eimg>images/skills/vayne/vayneE.png</Eimg>
+		<Ename>선고</Ename>
+		<Einfo>베인이 볼트를 발사하여 대상을 뒤로 날려보내고 물리 피해를 입힙니다. 지형에 부딪힌 대상은 추가 물리 피해를 입고 1.5초 동안 기절합니다.</Einfo>
+		<Rimg>images/skills/vayne/vayneR.png</Rimg>
+		<Rname>결전의 시간</Rname>
+		<Rinfo>베인이 잠시 동안 공격력을 얻습니다. 적 챔피언이 베인에게 피해를 입고 3초 안에 죽으면 지속 시간이 4초 늘어납니다. 또한 스킬이 지속되는 동안&lt;br&gt;
+&lt;b&gt;어둠 사냥꾼&lt;/b&gt; 효과가 강화되어 이동 속도가 90 증가합니다.&lt;br&gt;
+&lt;b&gt;구르기&lt;/b&gt;의 재사용 대기시간이 감소하며, 구르기를 사용하면 1초 동안 투명 상태가 됩니다.</Rinfo>
+		<Rplus>투명 상태의 유닛은 포탑이나 절대 시야로만 모습이 드러납니다.
+이 스킬의 지속 시간은 기존 최대 지속 시간을 초과해 늘어날 수 없습니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>블리츠크랭크</championName>
+		<roleGroup>탱커</roleGroup>
+		<area>자운</area>
+		<line>서폿</line>
+		<championFace>images/champion/Blitzcrank.png</championFace>
+		<championId>blitzcrank</championId>
+		<dialogue>시스템 가동. 준비 완료.</dialogue>
+		<dialogueSound>voice/blitzcrank.mp3</dialogueSound>
+		<Pimg>images/skills/blitzcrank/blitzcrankP.png</Pimg>
+		<Pname>마나 보호막</Pname>
+		<Pinfo>블리츠크랭크의 체력이 30% 이하가 되면 최대 마나의 30%의 피해를 흡수하는 보호막을 얻습니다. 이 효과는 90초 후 다시 활성화됩니다.</Pinfo>
+		<Qimg>images/skills/blitzcrank/blitzcrankQ.png</Qimg>
+		<Qname>로켓 손</Qname>
+		<Qinfo>블리츠크랭크가 오른손을 발사하여 적중당한 적을 끌어당기고 마법 피해를 입힙니다.</Qinfo>
+		<Wimg>images/skills/blitzcrank/blitzcrankW.png</Wimg>
+		<Wname>폭주</Wname>
+		<Winfo>블리츠크랭크가 힘을 충전하여 5초 동안 이동 속도가 증가했다가 점차 원래대로 돌아오고, 공격 속도가 증가합니다. 폭주 효과가 끝나면 블리츠크랭크가 1.5초 동안 30% 둔화됩니다.
+</Winfo>
+		<Wplus>이동 속도는 2.5초 동안 10%까지 느려집니다.</Wplus>
+		<Eimg>images/skills/blitzcrank/blitzcrankE.png</Eimg>
+		<Ename>강철 주먹</Ename>
+		<Einfo>블리츠크랭크가 주먹에 힘을 모아 다음 공격 시 적을 공중으로 띄우고 공격력의 두 배의 물리 피해를 입힙니다.</Einfo>
+		<Rimg>images/skills/blitzcrank/blitzcrankR.png</Rimg>
+		<Rname>정전기장</Rname>
+		<Rpassive>스킬이 재사용 대기 상태가 아닐 때 블리츠크랭크의 주먹에 번개가 충전되어 공격 대상에게 표식을 남깁니다. 1초가 지나면 해당 적이 감전되어 마법 피해를 입습니다.</Rpassive>
+		<Ractive>블리츠크랭크가 과충전해 주변 적들에게 마법 피해를 입히고 0.75초 동안 침묵시킵니다. 또한 적들의 보호막도 파괴합니다.</Ractive>
+		<Rplus>기본 지속 효과는 최대 3회까지 적들에게 중첩됩니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>사이온</championName>
+		<roleGroup>탱커</roleGroup>
+		<area>녹서스</area>
+		<line>탑</line>
+		<championFace>images/champion/Sion.png</championFace>
+		<championId>sion</championId>
+		<dialogue>휴식은...산 자를 위한...것이다...!</dialogue>
+		<dialogueSound>voice/sion.mp3</dialogueSound>
+		<Pimg>images/skills/sion/sionP1.png</Pimg>
+		<Pimg>images/skills/sion/sionP2.png</Pimg>
+		<Pname>영광스러운 죽음</Pname>
+		<Pinfo>사이온은 처치된 다음 되살아나 이동하고 공격할 수 있지만, 부활한 동안에는 체력이 급속히 떨어집니다. 생명력 흡수 효과가 100% 증가하고, 매우 빠르게 공격하며 적중 시 대상 최대 체력의 10%에 해당하는 물리 피해를 추가로 입힙니다.&lt;br&gt;
+모든 스킬이 죽음의 물결로 대체되어 이동 속도가 대폭 상승합니다.</Pinfo>
+		<Pplus>챔피언이 아닌 대상에게 최대 75의 추가 피해를 입힙니다. 이 상태에서 사이온은 구조물에 40%의 피해를 입힙니다.</Pplus>
+		<Pname>죽음의 물결</Pname>
+		<Pinfo>사이온의 이동 속도가 50% 증가했다가 1.5초에 걸쳐 원래대로 돌아옵니다.</Pinfo>
+		<Qimg>images/skills/sion/sionQ.png</Qimg>
+		<Qname>대량 학살 강타</Qname>
+		<Qready>사이온이 최대 2초 동안 강력한 일격을 충전합니다.</Qready>
+		<Qstart>사이온이 도끼를 내리쳐 적들을 잠시 둔화시키고 충전 시간에 비례해 물리 피해를 입힙니다. 최소 1초 이상 충전했다면 적들을 공중으로 띄워 올리고 1.25~2.25초 기절시킵니다.</Qstart>
+		<Qplus>정글 몬스터에게는 150%의 피해, 미니언에게는 60%의 피해를 입힙니다.</Qplus>
+		<Wimg>images/skills/sion/sionW1.png</Wimg>
+		<Wimg>images/skills/sion/sionW2.png</Wimg>
+		<Wname>영혼의 용광로</Wname>
+		<Wpassive>사이온은 유닛을 하나 처치할 때마다 최대 체력이 4 증가합니다. 챔피언 처치 관여, 대형 미니언 또는 대형 몬스터 처치 시 최대 체력이 15 증가합니다.</Wpassive>
+		<Wactive>사이온이 6초간 보호막을 얻습니다.</Wactive>
+		<Winfo>3초 후에 보호막이 지속 중이라면 스킬을 재사용하여 보호막을 폭발시키고 대상 최대 체력에 해당하는 마법 피해를 입힐 수 있습니다.</Winfo>
+		<Wplus>미니언과 몬스터에게 최대 400의 추가 피해를 입힙니다.</Wplus>
+		<Eimg>images/skills/sion/sionE.png</Eimg>
+		<Ename>학살자이 포효</Ename>
+		<Einfo>사이온이 충격파를 발사해 마법 피해를 입히고 2.5초간 적들을 둔화시키며, 2.5초간 방어력이 20% 감소합니다. 챔피언이 아닌 대상이 공격에 적중당하면 뒤로 밀려납니다. 뒤로 밀려난 유닛에게 부딪힌 적들에게는 동일한 피해와 효과가 적용됩니다.</Einfo>
+		<Rimg>images/skills/sion/sionR.png</Rimg>
+		<Rname>멈출 수 없는 맹공</Rname>
+		<Rinfo>사이온이 8초 동안 저지 불가 상태가 되어 마우스 커서 방향으로 돌진합니다.
+사이온이 적 챔피언이나 벽과 충돌하거나 스킬을 재사용하면 멈춥니다.&lt;br&gt;&lt;br&gt;
+		돌진이 끝나면 이동 거리에 비례해 물리 피해를 입힙니다. 사이온 주변에 있는 적들은 이동 거리에 비례해 0.75~1.75초간 기절합니다. 더 넓은 범위에 있는 적들은 3초간 둔화됩니다.
+		</Rinfo>
+	</champion>
+	<champion>
+		<championName>소라카</championName>
+		<roleGroup>서포터</roleGroup>
+		<area>타곤</area>
+		<line>서폿</line>
+		<championFace>images/champion/Soraka.png</championFace>
+		<championId>soraka</championId>
+		<dialogue>내 숨이 붙어있는 한 고통받게 두진 않아요.</dialogue>
+		<dialogueSound>voice/soraka.mp3</dialogueSound>
+		<Pimg>images/skills/soraka/sorakaP.png</Pimg>
+		<Pname>구원</Pname>
+		<Pinfo>소라카가 체력이 40% 이하인 아군 챔피언 쪽으로 이동할 때 이동 속도가 70% 상승합니다.</Pinfo>
+		<Pplus>소라카로부터 2500 범위 안의 아군에게만 해당됩니다.</Pplus>
+		<Qimg>images/skills/soraka/sorakaQ.png</Qimg>
+		<Qname>별부름</Qname>
+		<Qinfo>소라카가 별을 떨어뜨려 마법 피해를 입히고 1.5초 동안 30% 둔화시킵니다.&lt;br&gt;
+적 챔피언에게 적중하면 소라카가 별의 가호를 얻어 2.5초에 걸쳐 체력을 회복하고 이동 속도가 증가했다가 원래대로 돌아옵니다.</Qinfo>
+		<Wimg>images/skills/soraka/sorakaW.png</Wimg>
+		<Wname>은하의 마력</Wname>
+		<Winfo>소라카가 다른 아군 챔피언의 체력을 회복시킵니다.&lt;br&gt;
+소라카가 별의 가호를 받고 있으면 체력 소모량이 감소하며 대상도 2.5초 동안 별의 가호를 받습니다.
+		</Winfo>
+		<Wplus>소라카의 체력이 5% 이하일 때는 시전할 수 없습니다.</Wplus>
+		<Eimg>images/skills/soraka/sorakaE.png</Eimg>
+		<Ename>별의 균형</Ename>
+		<Einfo>소라카가 별의 영역을 생성해 마법 피해를 입힙니다. 영역은 1.5초 동안 유지되며 안에 있는 적을 침묵시킵니다. 영역이 사라지면 안에 있던 적은 속박되며 같은 양의 마법 피해를 입습니다.</Einfo>
+		<Rimg>images/skills/soraka/sorakaR.png</Rimg>
+		<Rname>기원</Rname>
+		<Rinfo>소라카가 신의 권능을 빌어 아군의 거리와 관계없이 모든 아군 챔피언의 고통스러운 상처 효과를 없애고 체력을 회복시킵니다. 체력이 40% 이하인 대상에게는 회복 효과가 50%까지 증가합니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>시비르</championName>
+		<roleGroup>원거리</roleGroup>
+		<area>슈리마</area>
+		<line>바텀</line>
+		<championFace>images/champion/Sivir.png</championFace>
+		<championId>sivir</championId>
+		<dialogue>내 건 내가 알아서 챙겨. 목숨이든, 돈이든.</dialogue>
+		<dialogueSound>voice/sivir.mp3</dialogueSound>
+		<Pimg>images/skills/sivir/sivirP.png</Pimg>
+		<Pname>재빠른 발놀림</Pname>
+		<Pinfo>시비르가 기본 공격이나 스킬로 적 챔피언을 공격하면 2초 동안 이동 속도를 얻습니다.</Pinfo>
+		<Qimg>images/skills/sivir/sivirQ.png</Qimg>
+		<Qname>부메랑 검</Qname>
+		<Qinfo>시비르가 십자날 검을 던져서 관통하는 모든 적 챔피언에게 물리 피해를 입히고 돌아오며 두 번째 피해를 입힙니다. 이 스킬은 챔피언이 아닌 대상에게 적중할 때마다 피해량이 15%씩 감소하며 최소 40%까지 내려갈 수 있습니다.</Qinfo>
+		<Qplus>십자날 검이 돌아올 때 피해량 감소는 초기화됩니다.</Qplus>
+		<Wimg>images/skills/sivir/sivirW.png</Wimg>
+		<Wname>튕기는 부메랑</Wname>
+		<Winfo>시비르의 다음 기본 공격 3회는 주변 대상에게 튕기며 첫 번째 대상에게는 100% 공격력의 물리 피해를, 그다음 대상에게는 각각 감소된 물리 피해를 입힙니다.&lt;br&gt;
+첫 번째 대상에게 치명타로 적중 시 튕긴 대상에게도 치명타로 적중됩니다.</Winfo>
+		<Wplus>튕기는 부메랑 스킬은 같은 대상을 두 번 이상 맞힐 수 없습니다.</Wplus>
+		<Eimg>images/skills/sivir/sivirE.png</Eimg>
+		<Ename>주문 방어막</Ename>
+		<Einfo>시비르가 1.5초간 주문 방어막을 만들어 적의 스킬을 막아냅니다. 적의 스킬을 방어하는 데 성공하면 시비르가 마나를 회복합니다.</Einfo>
+		<Eplus>이 보호막은 챔피언과 아이템 스킬을 모두 방어합니다.</Eplus>
+		<Rimg>images/skills/sivir/sivirR.png</Rimg>
+		<Rname>사냥 개시</Rname>
+		<Rpassive>튕기는 부메랑이 활성화된 상태에서 시비르의 공격 속도가 증가합니다.</Rpassive>
+		<Ractive>시비르가 8초 동안 아군을 규합하여, 주변 모든 아군의 이동 속도가 증가합니다. 이 효과는 몇 초에 걸쳐 점점 약해집니다.</Ractive>
+		<Rplus>이동 속도 증가 효과가 몇 초 후에 최소치로 감소합니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>아리</championName>
+		<roleGroup>마법사</roleGroup>
+		<area>아이오니아</area>
+		<line>미드</line>
+		<championFace>images/champion/Ahri.png</championFace>
+		<championId>ahri</championId>
+		<dialogue>우리 같이...홀려볼까요~?</dialogue>
+		<dialogueSound>voice/ahri.mp3</dialogueSound>
+		<Pimg>images/skills/ahri/ahriP.png</Pimg>
+		<Pname>정기 흡수</Pname>
+		<Pinfo>미니언이나 몬스터를 처치하면 아리가 정기 조각을 얻습니다. 조각을 9개 모으면 전부 소모해 체력을 회복합니다.&lt;br&gt;
+아리가 적 챔피언에게 피해를 입힌 후 3초 안에 해당 챔피언 처치에 관여하면 그 정기를 삼켜 체력을 회복합니다.</Pinfo>
+		<Qimg>images/skills/ahri/ahriQ.png</Qimg>
+		<Qname>현혹의 구슬</Qname>
+		<Qinfo>아리가 구슬을 던진 후 다시 받습니다. 던질 때는 마법 피해를 입히며 돌아올 때는 고정 피해를 입힙니다.</Qinfo>
+		<Wimg>images/skills/ahri/ahriW.png</Wimg>
+		<Wname>여우불</Wname>
+		<Winfo>아리가 근처 적에게 날아가는 여우불 세 개를 방출하여 마법 피해를 입힙니다. 첫 번째 여우불이 적중한 후에는 마법 피해량이 감소합니다. 또한 이동 속도가 40% 증가했다가 2초에 걸쳐 원래대로 돌아옵니다.</Winfo>
+		<Wplus>여우불은 매혹에 적중한 챔피언, 아리가 공격한 적, 이외 챔피언 순으로 공격합니다. 체력이 20% 이하인 미니언은 200%의 피해를 입습니다.</Wplus>
+		<Eimg>images/skills/ahri/ahriE.png</Eimg>
+		<Ename>매혹</Ename>
+		<Einfo>아리가 키스를 날려 첫 번째로 맞는 적을 일정 시간 매혹하고 마법 피해를 입힙니다.</Einfo>
+		<Eplus>이 스킬은 활성화된 이동 스킬을 모두 중단합니다.</Eplus>
+		<Rimg>images/skills/ahri/ahriR.png</Rimg>
+		<Rname>혼령 질주</Rname>
+		<Rinfo>아리가 민첩하게 질주하며 챔피언을 우선으로 근처 적에게 혼령의 정기 3개를 쏘아내 정기 하나당 마법 피해를 입힙니다.&lt;br&gt;
+혼령 질주가 활성화되어 있는 동안 정기 흡수로 챔피언의 정기를 흡수하면 스킬 재사용의 지속 시간을 최대 10초 늘리고 혼령 질주 시전을 추가로 1회 부여합니다. (최대 3회까지 중첩)</Rinfo>
+	</champion>
+	<champion>
+		<championName>알리스타</championName>
+		<roleGroup>탱커</roleGroup>
+		<area>룬테라</area>
+		<line>서폿</line>
+		<championFace>images/champion/Alistar.png</championFace>
+		<championId>alistar</championId>
+		<dialogue>누구도 날 막지 못해!</dialogue>
+		<dialogueSound>voice/alistar.mp3</dialogueSound>
+		<Pimg>images/skills/alistar/alistarP.png</Pimg>
+		<Pname>승리의 포효</Pname>
+		<Pinfo>알리스타가 적 챔피언을 기절시키거나, 공중으로 띄워 올리거나, 뒤로 밀어내거나, 적이 죽을 때마다 중첩을 얻습니다. 7회 중첩되면 알리스타가 포효하며 자신의 체력을 회복하고 근처 아군 챔피언의 체력을 두 배만큼 회복시킵니다.&lt;br&gt;&lt;br&gt;
+적 챔피언이나 에픽 정글 몬스터가 죽으면 이 스킬이 최대로 중첩됩니다.</Pinfo>
+		<Qimg>images/skills/alistar/alistarQ.png</Qimg>
+		<Qname>분쇄</Qname>
+		<Qinfo>알리스타가 땅을 내리쳐 1초 동안 적을 공중으로 띄워 올리고 마법 피해를 입힙니다.</Qinfo>
+		<Wimg>images/skills/alistar/alistarW.png</Wimg>
+		<Wname>박치기</Wname>
+		<Winfo>알리스타가 적에게 박치기를 하여 뒤로 밀어내고 마법 피해를 입힙니다.</Winfo>
+		<Eimg>images/skills/alistar/alistarE.png</Eimg>
+		<Ename>짓밟기</Ename>
+		<Einfo>알리스타가 땅을 짓밟기 시작하며 유체화 상태가 되고 5초에 걸쳐 근처 적에게 마법 피해를 입힙니다. 이 스킬로 챔피언에게 피해를 입힐 때마다 중첩이 1회 쌓입니다.&lt;br&gt;
+5회 중첩되면 알리스타의 다음 기본 공격이 대상을 1초 동안 기절시키고 마법 피해를 추가로 입힙니다.</Einfo>
+		<Eplus>유체화 상태인 유닛은 다른 유닛과 충돌하지 않습니다.</Eplus>
+		<Rimg>images/skills/alistar/alistarR.png</Rimg>
+		<Rname>꺾을 수 없는 의지</Rname>
+		<Rinfo>알리스타가 즉시 모든 방해 효과를 없애고 7초 동안 받는 피해가 감소합니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>애니</championName>
+		<roleGroup>마법사</roleGroup>
+		<area>룬테라</area>
+		<line>미드</line>
+		<championFace>images/champion/Annie.png</championFace>
+		<championId>annie</championId>
+		<dialogue>너도 같이 놀래?ㅎ 재밌겠다~!</dialogue>
+		<dialogueSound>voice/annie.mp3</dialogueSound>
+		<Pimg>images/skills/annie/annieP.png</Pimg>
+		<Pname>방화광</Pname>
+		<Pinfo>애니가 스킬을 4번 사용하면 다음 공격 스킬이 일정 시간 동안 적을 기절시킵니다.</Pinfo>
+		<Qimg>images/skills/annie/annieQ.png</Qimg>
+		<Qname>붕괴</Qname>
+		<Qinfo>애니가 화염구를 던져 마법 피해를 입힙니다. 대상이 사망하면 소모한 마나를 돌려받고 재사용 대기시간이 50% 감소합니다.</Qinfo>
+		<Wimg>images/skills/annie/annieW.png</Wimg>
+		<Wname>소각</Wname>
+		<Winfo>애니가 화염파를 발사하여 마법 피해를 입힙니다.</Winfo>
+		<Eimg>images/skills/annie/annieE.png</Eimg>
+		<Ename>용암 방패</Ename>
+		<Einfo>애니가 자신이나 아군에게 3초 동안 피해를 흡수하는 보호막을 부여합니다. 보호막으로 인해 이동 속도가 증가한 뒤 1.5초에 걸쳐 원래대로 돌아옵니다. 보호막이 지속되는 동안 공격한 적은 마법 피해를 입습니다.</Einfo>
+		<Rimg>images/skills/annie/annieR1.png</Rimg>
+		<Rimg>images/skills/annie/annieR2.png</Rimg>
+		<Rname>소환: 티버</Rname>
+		<Rinfo>티버를 소환해 마법 피해를 입힙니다. 티버는 45초간 주변 적을 불태워 초당 마법 피해를 입히고 적을 공격해 마법 피해를 입힙니다.</Rinfo>
+		<Rname>명령: 티버</Rname>
+		<Rinfo>애니는 이 스킬을 재사용해 티버를 조종할 수 있습니다.&lt;br&gt;
+애니가 사망하면 티버가 분노하여 공격 속도가 275%, 이동 속도가 100% 증가합니다. 이 효과는 3초에 걸쳐 원래대로 돌아옵니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>애쉬</championName>
+		<roleGroup>원거리</roleGroup>
+		<area>프렐요드</area>
+		<line>바텀</line>
+		<championFace>images/champion/Ashe.png</championFace>
+		<championId>ashe</championId>
+		<dialogue>화살 한 발로 세상을 평정해 주지.</dialogue>
+		<dialogueSound>voice/ashe.mp3</dialogueSound>
+		<Pimg>images/skills/ashe/asheP.png</Pimg>
+		<Pname>서리 화살</Pname>
+		<Pinfo>애쉬의 기본 공격과 스킬이 대상을 2초간 둔화 시킵니다.이 스킬에 영향을 받은 적을 공격하면 추가 피해를 입힙니다.&lt;br&gt;
+애쉬의 치명타는 추가 피해를 가하지 않는 대신, 둔화 효과를 늘려 줍니다. 둔화 효과는 점차 원래대로 돌아옵니다.</Pinfo>
+		<Pplus>추가 피해량은 치명타 확률과 추가 치명타 피해량에 비례합니다.</Pplus>
+		<Qimg>images/skills/ashe/asheQ.png</Qimg>
+		<Qname>궁사의 집중</Qname>
+		<Qpassive>애쉬가 기본 공격 시 4초 동안 유지되는 중첩이 1회 쌓입니다. 4회 중첩 시 이 스킬을 사용할 수 있습니다.</Qpassive>
+		<Qactive>4초 동안 애쉬의 공격 속도가 오르며 기본 공격이 강화된 피해를 입힙니다.</Qactive>
+		<Qplus>강화된 기본 공격은 5개의 작은 공격을 한꺼번에 퍼붓습니다. 적중 시 효과는 기본 공격당 한 번만 적용됩니다.</Qplus>
+		<Wimg>images/skills/ashe/asheW.png</Wimg>
+		<Wname>일제 사격</Wname>
+		<Winfo>애쉬가 몇 개의 화살을 일제히 쏴 각각 물리 피해를 입힙니다. 적들은 일제 사격의 여러 화살에 맞을 수 있지만, 그중 첫 번째 화살에만 피해를 입습니다.</Winfo>
+		<Wplus>챔피언에게 적중되면 서리 화살 효과가 적용되는 치명타로 판정됩니다.</Wplus>
+		<Eimg>images/skills/ashe/asheE.png</Eimg>
+		<Ename>매 날리기</Ename>
+		<Einfo>애쉬가 매를 맵 어느 위치든 날려 보내 5초 동안 시야를 확보합니다.&lt;br&gt; 매는 날아가는 동안 주변 지역을 드러냅니다.
+이 스킬은 2회까지 충전됩니다.</Einfo>
+		<Rimg>images/skills/ashe/asheR.png</Rimg>
+		<Rname>마법의 수정화살</Rname>
+		<Rinfo>애쉬가 얼음 수정화살을 발사하여 처음으로 맞힌 챔피언에게 마법 피해를 입히고 기절시킵니다. 기절 지속 시간은 화살이 날아가는 거리에 비례하여 3.5초까지 증가합니다. 주변의 적들도 절반의 피해를 입습니다.</Rinfo>
+		<Rplus>기절 효과는 최소 1초 지속됩니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>워윅</championName>
+		<roleGroup>전사</roleGroup>
+		<area>자운</area>
+		<line>정글</line>
+		<championFace>images/champion/Warwick.png</championFace>
+		<championId>warwick</championId>
+		<dialogue>피비린내다..! 도망쳐라...</dialogue>
+		<dialogueSound>voice/warwick.mp3</dialogueSound>
+		<Pimg>images/skills/warwick/warwickP.png</Pimg>
+		<Pname>끝없는 허기</Pname>
+		<Pinfo>워윅의 기본 공격은 추가 마법 피해를 입힙니다.&lt;br&gt;&lt;br&gt;
+워윅의 체력이 50% 이하가 되면 끝없는 허기로 입힌 추가 피해량만큼 체력을 회복하며 체력이 25% 이하가 되면 추가 피해량의 250%만큼 체력을 회복합니다.</Pinfo>
+		<Qimg>images/skills/warwick/warwickQ.png</Qimg>
+		<Qname>야수의 송곳니</Qname>
+		<Qshort>워윅이 앞으로 짧게 전진하며 대상을 물어 대상 최대 체력에 비례하는 마법 피해를 입히고 입힌 피해량의 일부만큼 체력을 회복합니다.</Qshort>
+		<Qlong>워윅이 짧게 전진하며 대상을 꽉 물고 뒤로 넘어갑니다. 대상을 물고 있는 동안 대상은 워윅을 떼어낼 수 없으며 대상을 놓으면 동일한 피해를 입히고 입힌 피해량의 일부만큼 체력을 회복합니다.</Qlong>
+		<Qplus>이 스킬은 적중 시 효과가 적용됩니다.</Qplus>
+		<Wimg>images/skills/warwick/warwickW.png</Wimg>
+		<Wname>피의 사냥</Wname>
+		<Wpassive>체력이 50% 미만인 챔피언을 감지합니다. 해당 챔피언을 향해 이동할 경우 이동 속도가 증가하고 해당 챔피언을 공격할 경우 공격 속도가 증가합니다. 적의 체력이 20% 이하일 경우 이 효과들은 세 배로 증가합니다.</Wpassive>
+		<Wactive>잠시 동안 모든 적의 위치를 감지하여 체력과 상관없이 가장 가까이에 있는 적 챔피언에게 8초간 이 스킬의 기본 지속 효과를 적용합니다. 챔피언과 전투 중일 때는 이 스킬을 사용할 수 없습니다.</Wactive>
+		<Wplus>감지되는 적이 아무도 없으면 이 스킬의 재사용 대기시간이 두 배 빨리 줄어듭니다.</Wplus>
+		<Eimg>images/skills/warwick/warwickE.png</Eimg>
+		<Ename>원시의 포효</Ename>
+		<Einfo>2.5초 동안 워윅이 입는 피해가 감소합니다. 지속 시간이 종료되면 워윅이 포효하며 근처의 모든 적을 1초 동안 공포에 빠뜨립니다.&lt;br&gt;&lt;br&gt;
+		재사용하면 스킬이 일찍 종료됩니다.
+		</Einfo>
+		<Rimg>images/skills/warwick/warwickR.png</Rimg>
+		<Rname>무한의 구속</Rname>
+		<Rinfo>워윅이 이동 속도에 비례하는 먼 거리를 도약하여 첫 번째로 부딪힌 적 챔피언을 1.5초 동안 제압하며 정신을 집중합니다.
+지속 시간 동안 마법 피해를 입히고 적중 시 효과를 3회 적용합니다.&lt;br&gt;
+워윅은 정신을 집중하면서 가한 모든 피해량의 100%만큼 체력을 회복합니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>잭스</championName>
+		<roleGroup>전사</roleGroup>
+		<area>룬테라</area>
+		<line>탑</line>
+		<championFace>images/champion/Jax.png</championFace>
+		<championId>jax</championId>
+		<dialogue>자, 한번 해 보자고!</dialogue>
+		<dialogueSound>voice/jax.mp3</dialogueSound>
+		<Pimg>images/skills/jax/jaxP.png</Pimg>
+		<Pname>가차없는 맹공</Pname>
+		<Pinfo>잭스가 기본 공격 시 2.5초 동안 공격 속도가 상승합니다. (최대 공격 속도 8회 중첩)</Pinfo>
+		<Qimg>images/skills/jax/jaxQ.png</Qimg>
+		<Qname>도약 공격</Qname>
+		<Qinfo>잭스가 아군 또는 적 유닛, 와드를 향해 도약합니다. 적인 경우 물리 피해를 입힙니다.</Qinfo>
+		<Wimg>images/skills/jax/jaxQ.png</Wimg>
+		<Wname>무기 강화</Wname>
+		<Winfo>잭스가 무기에 힘을 모아 다음 기본 공격이나 도약 공격 시 마법 피해를 추가로 입힙니다.</Winfo>
+		<Eimg>images/skills/jax/jaxE.png</Eimg>
+		<Ename>반격</Ename>
+		<Einfo>잭스가 2초간 방어 태세에 들어가 기본 공격을 회피하고, 광역 스킬로부터 받는 피해가 25% 감소합니다.&lt;br&gt;&lt;br&gt;
+2초가 지나거나 스킬을 재사용하면, 근처 적들에게 물리 피해를 입히고 1초 동안 기절시킵니다. 잭스가 회피한 기본 공격 1회당 피해량이 20% 증가합니다.(최대 100%)</Einfo>
+		<Rimg>images/skills/jax/jaxE.png</Rimg>
+		<Rname>달인의 저력</Rname>
+		<Rpassive>세 번째 기본 공격을 가할 때마다 마법 피해를 추가로 입힙니다.</Rpassive>
+		<Ractive>잭스가 결의를 다져 8초 동안 방어력, 마법 저항력이 증가합니다.</Ractive>
+	</champion>
+	<champion>
+		<championName>제드</championName>
+		<roleGroup>암살자</roleGroup>
+		<area>아이오니아</area>
+		<line>미드</line>
+		<championFace>images/champion/Zed.png</championFace>
+		<championId>zed</championId>
+		<dialogue>보이지 않는 검이 가장 무서운 법.</dialogue>
+		<dialogueSound>voice/zed.mp3</dialogueSound>
+		<Pimg>images/skills/zed/zedP.png</Pimg>
+		<Pname>약자 멸시</Pname>
+		<Pinfo>제드가 체력 50% 이하인 적을 기본 공격하면 대상의 최대 체력에 비례한 마법 피해를 추가로 입힙니다. 같은 적 챔피언에게는 이 효과가 10초에 한 번씩만 적용됩니다.</Pinfo>
+		<Pplus>에픽 몬스터 상대 최대 피해량은 300입니다.&lt;br&gt;정글 몬스터에게 200%의 피해를 입힙니다.</Pplus>
+		<Qimg>images/skills/zed/zedQ.png</Qimg>
+		<Qname>예리한 표창</Qname>
+		<Qinfo>제드와 그림자가 표창을 던져, 각각 처음 맞는 적에게 물리 피해를 입히고 이후 추가로 맞히는 적에게는 각각 60%의 물리 피해를 입힙니다.</Qinfo>
+		<Wimg>images/skills/zed/zedW.png</Wimg>
+		<Wname>살아있는 그림자</Wname>
+		<Wpassive>제드와 그림자가 같은 스킬로 동일한 대상을 공격할 때마다 제드가 기력을 얻습니다.</Wpassive>
+		<Wactive>제드의 그림자가 전방으로 질주하여, 5초간 그 자리에 유지됩니다.</Wactive>
+		<Winfo>이 스킬을 재사용하면 제드가 그림자와 위치를 바꿉니다.</Winfo>
+		<Eimg>images/skills/zed/zedE.png</Eimg>
+		<Ename>그림자 베기</Ename>
+		<Einfo>제드와 그림자가 각각 주위 적을 베어 물리 피해를 입힙니다.&lt;br&gt;&lt;br&gt;
+제드가 이 스킬로 적 챔피언을 하나 맞힐 때마다 살아있는 그림자의 재사용 대기시간이 2초씩 감소합니다.&lt;br&gt;&lt;br&gt;
+그림자의 스킬에 맞은 적은 1.5초 동안 둔화됩니다. 그림자 베기로 동일한 대상을 여러 번 맞힐 경우, 추가 피해는 입히지 않지만 1.5배의 둔화 효과가 적용됩니다.</Einfo>
+		<Rimg>images/skills/zed/zedR.png</Rimg>
+		<Rname>죽음의 표식</Rname>
+		<Rinfo>제드가 잠시 대상으로 지정할 수 없는 상태가 되어 적 챔피언에게 돌진하며 표식을 남깁니다. 3초가 지나면 표식이 발동되며 물리 피해를 입히고 표식이 적용된 동안 제드가 대상에게 가한 피해의 일부에 해당하는 피해를 추가로 입힙니다.&lt;br&gt;
+돌진 시 7.5초 동안 유지되는 그림자가 남습니다. 이 스킬을 재사용하면 제드가 이 그림자와 위치를 바꿉니다.</Rinfo>
+		<Rplus>대상으로 지정할 수 없는 유닛은 이미 적중당한 상대가 아닌 한 적의 기본 공격이나 스킬에 영향을 받지 않습니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>카타리나</championName>
+		<roleGroup>암살자</roleGroup>
+		<area>녹서스</area>
+		<line>미드</line>
+		<championFace>images/champion/Katarina.png</championFace>
+		<championId>katarina</championId>
+		<dialogue>폭력은 모든 것을 해결해 주지.</dialogue>
+		<dialogueSound>voice/katarina.mp3</dialogueSound>
+		<Pimg>images/skills/katarina/katarinaP.png</Pimg>
+		<Pname>탐욕</Pname>
+		<Pinfo>카타리나가 피해를 입힌 챔피언이 3초 내에 죽을 때마다 카타리나의 스킬 재사용 대기시간이 15초 감소합니다.&lt;br&gt;
+카타리나가 단검을 다시 주우면 근처의 적을 모두 공격해 마법 피해를 입힙니다.</Pinfo>
+		<Pplus>단검은 적 챔피언에게는 적중 시 효과를 적용합니다.</Pplus>
+		<Qimg>images/skills/katarina/katarinaQ.png</Qimg>
+		<Qname>단검 투척</Qname>
+		<Qinfo>카타리나가 단검을 던져 대상과 주변 2명의 적에게 마법 피해를 입힙니다(총 3명). 그 후 단검은 최초 대상 뒤에 떨어집니다.</Qinfo>
+		<Wimg>images/skills/katarina/katarinaW.png</Wimg>
+		<Wname>준비</Wname>
+		<Winfo>카타리나가 공중에 단검을 던지고, 이동 속도가 상승했다가 1.25초에 걸쳐 원래대로 돌아옵니다.</Winfo>
+		<Eimg>images/skills/katarina/katarinaE.png</Eimg>
+		<Ename>순보</Ename>
+		<Einfo>카타리나가 대상 아군, 적, 또는 단검에 즉시 도약합니다. 대상이 적일 경우 마법 피해를 입히고, 그 외의 경우에는 사거리 안에 있으면서 도약한 지점에서 가장 가까운 적을 공격합니다.&lt;br&gt;
+단검을 다시 주우면 이 스킬의 재사용 대기시간이 줄어듭니다.</Einfo>
+		<Eplus>이 공격은 적중 시 효과가 적용됩니다.&lt;br&gt;
+카타리나는 대상 근처의 어느 지점으로든 순간이동할 수 있습니다.</Eplus>
+		<Rimg>images/skills/katarina/katarinaR.png</Rimg>
+		<Rname>죽음의 연꽃</Rname>
+		<Rinfo>카타리나가 칼날의 돌풍을 일으켜 매우 빠른 속도로 근처 적 챔피언 세 명을 단검으로 공격합니다. 각 단검은 마법 피해 및 물리 피해를 입히고 3초 동안 50%의 고통스러운 상처를 남깁니다.&lt;br&gt;
+적 하나당 2.5초 동안 받는 총 피해량: 15배의 마법 피해 및 15배의 물리 피해</Rinfo>
+		<Rplus>이 스킬은 피해량의 일부에 해당하는 적중 시 및 공격 시 효과를 적용하나, 치명타와 생명력 흡수는 적용하지 않습니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>케일</championName>
+		<roleGroup>전사</roleGroup>
+		<area>데마시아</area>
+		<line>탑</line>
+		<championFace>images/champion/Kayle.png</championFace>
+		<championId>kayle</championId>
+		<dialogue>모두가 내 전능함을 경외하리라.</dialogue>
+		<dialogueSound>voice/kayle.mp3</dialogueSound>
+		<Pimg>images/skills/kayle/kayleP.png</Pimg>
+		<Pname>거룩한 승천</Pname>
+		<Pinfo>챔피언 및 스킬 레벨이 오를수록 케일의 공격이 강화됩니다.&lt;br&gt;&lt;br&gt;
+&lt;b&gt;1레벨: &lt;/b&gt;케일이 기본 공격 시 5초 동안 공격 속도가 6 +0.01 주문력)% 상승하며 이 효과는 최대 5회 중첩됩니다. 최대 중첩 시 희열 상태가 되며 이동 속도가 8% 상승합니다.&lt;br&gt;
+&lt;b&gt;6레벨: &lt;/b&gt;공격 사거리가 525까지 증가합니다.&lt;br&gt;
+&lt;b&gt;11레벨: &lt;/b&gt;희열 상태에서 공격 시 화염파를 발사해 마법 피해를 입힙니다.&lt;br&gt;
+&lt;b&gt;16레벨: &lt;/b&gt;케일이 영구히 희열 상태를 유지하며 공격 사거리가 625까지 늘어납니다.</Pinfo>
+		<Pplus>화염파는 치명타로 적중할 수 있으며 마법 아이템 효과가 적용됩니다. 피해량은 화염주문검 스킬 레벨에 따라 증가합니다.</Pplus>
+		<Qimg>images/skills/kayle/kayleQ.png</Qimg>
+		<Qname>광휘의 일격</Qname>
+		<Qinfo>케일이 처음으로 적을 맞히면 멈추는 천상의 검을 발사합니다. 검은 대상과 그 뒤에 있는 적들에게 마법 피해를 입히고 2초 동안 둔화시키며 4초 동안 15%의 방어력과 마법 저항력을 감소시킵니다.</Qinfo>
+		<Wimg>images/skills/kayle/kayleW.png</Wimg>
+		<Wname>천상의 축복</Wname>
+		<Winfo>케일이 자신과 대상 아군 챔피언에게 빛을 불어넣어 체력을 회복하고 2초 동안 이동 속도를 상승시킵니다.</Winfo>
+		<Wplus>대상을 지정하지 않고 이 스킬을 사용하면 범위 내에서 자신의 총 체력 대비 가장 피해를 많이 입은 아군을 치유합니다.</Wplus>
+		<Eimg>images/skills/kayle/kayleE1.png</Eimg>
+		<Eimg>images/skills/kayle/kayleE2.png</Eimg>
+		<Ename>화염주문검</Ename>
+		<Epassive>케일의 기본 공격이 마법 피해를 추가로 입힙니다.</Epassive>
+		<Eactive>케일의 다음 기본 공격 사거리가 증가하며 대상이 잃은 체력에 해당하는 마법 피해를 추가로 입힙니다.</Eactive>
+		<Eplus>이 스킬에는 적중 시 효과 및 마법 아이템 효과가 적용되며 정글 몬스터에게는 최대 400의 추가 피해를 입힙니다.</Eplus>
+		<Einfo>이 공격은 케일이 11레벨에 도달하면 대상에게 적중 시 폭발하며 주변 적에게 피해를 입힙니다.</Einfo>
+		<Rimg>images/skills/kayle/kayleR.png</Rimg>
+		<Rname>신성한 심판</Rname>
+		<Rinfo>케일이 아군 챔피언 한 명을 일정 시간 동안 무적 상태로 만듭니다. 그런 다음 대상 주위 지역을 정화해 주변 적들에게 마법 피해를 입힙니다.</Rinfo>
+		<Rplus>케일은 이 스킬을 사용하는 동안 기본 공격을 가하거나 스킬을 사용할 수 없지만 이동할 수 있습니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>탈론</championName>
+		<roleGroup>암살자</roleGroup>
+		<area>녹서스</area>
+		<line>정글</line>
+		<championFace>images/champion/Talon.png</championFace>
+		<championId>talon</championId>
+		<dialogue>칼에 살고, 칼에 죽는다.</dialogue>
+		<dialogueSound>voice/talon.mp3</dialogueSound>
+		<Pimg>images/skills/talon/talonP.png</Pimg>
+		<Pname>검의 최후</Pname>
+		<Pinfo>탈론이 챔피언이나 대형 정글 몬스터에게 스킬을 사용해 피해를 입히면 6초 동안 중첩을 적용합니다.(최대 3회 중첩)&lt;br&gt;
+3회 중첩된 대상에게 탈론이 기본 공격을 가하면 2초에 걸쳐 물리 피해를 추가로 입힙니다.</Pinfo>
+		<Pplus>정글 몬스터에게는 지속 피해로 120%의 피해를 입힙니다.</Pplus>
+		<Qimg>images/skills/talon/talonQ.png</Qimg>
+		<Qname>녹서스식 외교</Qname>
+		<Qinfo>탈론이 대상에게 도약해 물리 피해를 입힙니다. 근접 공격이 가능한 거리에서 사용하면 대신 치명타가 적용되어 150%의 물리 피해를 입힙니다.&lt;br&gt;
+이 스킬로 대상을 처치하면 체력을 회복하고 재사용 대기시간의 50%를 돌려받습니다.</Qinfo>
+		<Qplus>근접 공격 피해량은 치명타 피해량 증가에 영향을 받습니다.</Qplus>
+		<Wimg>images/skills/talon/talonW.png</Wimg>
+		<Wname>갈퀴손</Wname>
+		<Winfo>탈론이 부메랑 단검을 여러 개 던져 물리 피해를 입힙니다. 이후 단검이 돌아오며 물리 피해를 입히고 1초 동안 둔화시킵니다.</Winfo>
+		<Wplus>이 스킬은 정글 몬스터에게 105%의 피해를 입힙니다.</Wplus>
+		<Eimg>images/skills/talon/talonE.png</Eimg>
+		<Ename>암살자의 길</Ename>
+		<Einfo>탈론이 가장 가까운 지형이나 구조물 위로 도약해 뛰어넘습니다. 한 번 넘어간 지형은 일정 시간 동안 다시 넘을 수 없습니다.</Einfo>
+		<Rimg>images/skills/talon/talonR.png</Rimg>
+		<Rname>그림자 공격</Rname>
+		<Rinfo>탈론이 사방에 검을 던져 물리 피해를 입히고, 이동 속도가 상승하며 최대 2.5초 동안 투명 상태가 됩니다. 투명 상태가 끝나면 검이 탈론에게 돌아오며 다시 물리 피해를 입힙니다.&lt;br&gt;
+탈론이 기본 공격이나 &lt;b&gt;녹서스식 외교&lt;/b&gt; 스킬로 투명 상태를 해제하면 검이 탈론 대신 탈론의 대상에게 날아갑니다.</Rinfo>
+		<Rplus>투명 상태의 유닛은 포탑이나 절대 시야로만 모습이 드러납니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>트리스타나</championName>
+		<roleGroup>원거리</roleGroup>
+		<area>밴들시티</area>
+		<line>바텀</line>
+		<championFace>images/champion/Tristana.png</championFace>
+		<championId>tristana</championId>
+		<dialogue>일단 한 번 쏘고 나면 또 쏘고 싶을 거에요!</dialogue>
+		<dialogueSound>voice/tristana.mp3</dialogueSound>
+		<Pimg>images/skills/tristana/tristanaP.png</Pimg>
+		<Pname>정조준</Pname>
+		<Pinfo>트리스타나의 공격 사거리와 &lt;b&gt;폭발 화약&lt;/b&gt; 및 &lt;b&gt;대구경 탄환&lt;/b&gt;의 시전 거리가 늘어납니다.</Pinfo>
+		<Qimg>images/skills/tristana/tristanaQ.png</Qimg>
+		<Qname>속사</Qname>
+		<Qinfo>트리스타나가 자동 사격을 시작해 7초 동안 공격 속도가 상승합니다.</Qinfo>
+		<Wimg>images/skills/tristana/tristanaW.png</Wimg>
+		<Wname>로켓 점프</Wname>
+		<Winfo>트리스타나가 뛰어 오른 후 착지하며 마법 피해를 입히고 몇 초 동안 60% 둔화시킵니다.&lt;br&gt;&lt;br&gt;
+챔피언 처치에 관여하거나 챔피언에게 쌓인 최대 중첩 &lt;b&gt;폭발 화약&lt;/b&gt; 스킬이 터질 경우 이 스킬의 재사용 대기시간이 초기화됩니다.</Winfo>
+		<Eimg>images/skills/tristana/tristanaE.png</Eimg>
+		<Ename>폭발 화약</Ename>
+		<Epassive>트리스타나가 기본 공격으로 적을 처치하면 주변 적에게 마법 피해를 입힙니다.</Epassive>
+		<Eactive>트리스타나가 적이나 포탑에 폭탄을 부착해 4초 후 주변 적에게 물리 피해를 입힙니다. 피해량은 치명타 확률의 33.33%만큼 증가합니다. 폭탄이 부착된 대상을 기본 공격이나 스킬로 공격 시 피해량이 30%씩 증가합니다.(이 효과는 최대 4번까지 중첩됩니다.)&lt;br&gt;
+4번 중첩되면 폭탄이 즉시 폭발합니다.</Eactive>
+		<Eplus>포탑에 사용할 경우 폭발 반경이 두 배로 늘어납니다.</Eplus>
+		<Rimg>images/skills/tristana/tristanaR.png</Rimg>
+		<Rname>대구경 탄환</Rname>
+		<Rinfo>트리스타나가 거대한 대포를 발사하여 대상에게 마법 피해를 입히고 주변 적과 함께 뒤로 밀어냅니다.</Rinfo>
+		<Rplus>이 스킬로 &lt;b&gt;폭발 화약&lt;/b&gt; 마지막 중첩이 적용되면 유닛이 뒤로 밀려난 후 폭발합니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>트린다미어</championName>
+		<roleGroup>전사</roleGroup>
+		<area>프렐요드</area>
+		<line>탑</line>
+		<championFace>images/champion/Tryndamere.png</championFace>
+		<championId>tryndamere</championId>
+		<dialogue>손쉬운 사냥이 되겠군!</dialogue>
+		<dialogueSound>voice/tryndamere.mp3</dialogueSound>
+		<Pimg>images/skills/tryndamere/tryndamereP.png</Pimg>
+		<Pname>격노</Pname>
+		<Pinfo>트린다미어가 기본 공격 시 분노가 5만큼, 치명타 명중 시 분노가 10만큼, 그리고 마무리 일격 시 분노가 10만큼 상승합니다. 전투에서 벗어나 8초가 경과하면 트린다미어가 초당 5의 분노를 잃습니다.&lt;br&gt;&lt;br&gt;
+분노가 1 상승할 때마다 치명타 확률이 0.40%씩 증가합니다.</Pinfo>
+		<Qimg>images/skills/tryndamere/tryndamereQ.png</Qimg>
+		<Qname>피의 갈망</Qname>
+		<Qpassive>트린다미어가 피에 굶주려 공격력을 얻으며 체력 1%를 잃을 때마다 공격력을 추가로 얻습니다.</Qpassive>
+		<Qactive>트린다미어가 분노를 소모하여, 체력을 회복합니다.</Qactive>
+		<Wimg>images/skills/tryndamere/tryndamereW.png</Wimg>
+		<Wname>조롱의 외침</Wname>
+		<Winfo>트린다미어가 모욕을 퍼부어 4초 동안 챔피언의 공격력을 감소시킵니다. 트린다미어에게 등을 돌리고 있는 적은 같은 시간 동안 둔화됩니다.</Winfo>
+		<Eimg>images/skills/tryndamere/tryndamereE.png</Eimg>
+		<Ename>회전 베기</Ename>
+		<Einfo>트린다미어가 검을 들고 회전하며 적을 베어넘겨 물리 피해를 입히고 적중한 적 하나당 분노가 4 생성됩니다.&lt;br&gt;&lt;br&gt;
+트린다미어가 치명타를 입힐 때마다 이 스킬의 재사용 대기시간이 0.75초 감소하며 챔피언에게 치명타를 입히면 1.5초 감소합니다.</Einfo>
+		<Rimg>images/skills/tryndamere/tryndamereR.png</Rimg>
+		<Rname>불사의 분노</Rname>
+		<Rinfo>트린다미어의 체력이 5초 동안 일정 수치 아래로 내려가지 않으며 즉시 분노를 얻습니다.</Rinfo>
+		<Rplus>방해를 받는 동안에도 이 스킬을 사용할 수 있습니다.</Rplus>
+	</champion>
+	<champion>
+		<championName>트위스티드페이트</championName>
+		<roleGroup>마법사</roleGroup>
+		<area>빌지워터</area>
+		<line>미드</line>
+		<championFace>images/champion/TwistedFate.png</championFace>
+		<championId>twistedFate</championId>
+		<dialogue>행운의 여신이, 내게 미소를 짓는군.</dialogue>
+		<dialogueSound>voice/twistedFate.mp3</dialogueSound>
+		<Pimg>images/skills/twistedFate/twistedFateP.png</Pimg>
+		<Pname>사기 주사위</Pname>
+		<Pinfo>트위스티드 페이트는 유닛을 하나 처치할 때마다 1에서 6까지의 골드를 추가로 얻습니다.</Pinfo>
+		<Qimg>images/skills/twistedFate/twistedFateQ.png</Qimg>
+		<Qname>와일드 카드</Qname>
+		<Qinfo>트위스티드 페이트가 카드 세 장을 던져 각각 마법 피해를 입힙니다.</Qinfo>
+		<Qplus>적은 한 카드로만 피해를 입을 수 있습니다.</Qplus>
+		<Wimg>images/skills/twistedFate/twistedFateW.png</Wimg>
+		<Wimg>images/skills/twistedFate/twistedFateWblue.png</Wimg>
+		<Wimg>images/skills/twistedFate/twistedFateWred.png</Wimg>
+		<Wimg>images/skills/twistedFate/twistedFateWgold.png</Wimg>
+		<Wname>카드 뽑기</Wname>
+		<Wname>푸른색 카드</Wname>
+		<Wname>붉은색 카드</Wname>
+		<Wname>황금색 카드</Wname>
+		<Winfo>트위스티드 페이트가 덱을 섞고 재사용하면 세 카드 중 하나를 정해 다음 기본 공격을 강화합니다.</Winfo>
+		<Winfo>푸른색 카드는 마법 피해를 입히고 마나를 회복시켜줍니다.</Winfo>
+		<Winfo>붉은색 카드는 주변 적에게 마법 피해를 입히고 2.5초간 둔화시킵니다.</Winfo>
+		<Winfo>황금색 카드는 마법 피해를 입히고 적을 기절시킵니다.</Winfo>
+		<Eimg>images/skills/twistedFate/twistedFateE.png</Eimg>
+		<Ename>속임수 덱</Ename>
+		<Einfo>4번째 기본 공격마다 마법 피해를 추가로 입힙니다.&lt;br&gt;
+또한 공격 속도가 증가합니다.</Einfo>
+		<Rimg>images/skills/twistedFate/twistedFateR1.png</Rimg>
+		<Rimg>images/skills/twistedFate/twistedFateR2.png</Rimg>
+		<Rname>운명</Rname>
+		<Rinfo>트위스티드 페이트가 카드에 집중하여 일정 시간 동안 맵에 있는 모든 적 챔피언에 대한 절대 시야를 얻고 해당 스킬을 재사용할 수 있습니다.&lt;br&gt;
+&lt;b&gt;재사용 시:&lt;/b&gt; 트위스티드 페이트가 최대 5500의 거리만큼 순간이동합니다.</Rinfo>
+		<Rname>관문</Rname>
+		<Rinfo>트위스티드 페이트가 1.5초 안에 지정한 장소로 순간이동합니다.</Rinfo>
+	</champion>
+	<champion>
+		<championName>티모</championName>
+		<roleGroup>원거리</roleGroup>
+		<area>밴들시티</area>
+		<line>탑</line>
+		<championFace>images/champion/Teemo.png</championFace>
+		<championId>teemo</championId>
+		<dialogue>티모 대위, 명을 받들겠습니다!</dialogue>
+		<dialogueSound>voice/teemo.mp3</dialogueSound>
+		<Pimg>images/skills/teemo/teemoP.png</Pimg>
+		<Pname>유격 전투</Pname>
+		<Pinfo>티모가 1.5초 동안 피해를 입지 않고 가만히 있으면 다시 이동할 때까지 투명 상태가 됩니다. 수풀 속에서는 이동 중에도 투명 상태를 유지할 수 있습니다.&lt;br&gt;
+투명 상태에서 벗어나면 5초 동안 티모의 공격 속도가 상승합니다.</Pinfo>
+		<Pplus>투명 상태의 유닛은 포탑이나 절대 시야만 모습이 드러납니다.</Pplus>
+		<Qimg>images/skills/teemo/teemoQ.png</Qimg>
+		<Qname>실명 다트</Qname>
+		<Qinfo>티모가 다트를 날려 대상을 실명시키고 마법 피해를 입힙니다.</Qinfo>
+		<Qplus>미니언과 정글 몬스터는 200% 더 오래 실명합니다.</Qplus>
+		<Wimg>images/skills/teemo/teemoW.png</Wimg>
+		<Wname>신속한 이동</Wname>
+		<Wpassive>티모가 챔피언 또는 포탑에게 5초 동안 공격을 당하지 않았다면 이동 속도가 증가합니다.</Wpassive>
+		<Wactive>티모가 전력으로 질주하여 3초 동안 이동 속도가 2배 증가합니다. 이 효과는 공격당해도 사라지지 않습니다.</Wactive>
+		<Eimg>images/skills/teemo/teemoE.png</Eimg>
+		<Ename>맹독 다트</Ename>
+		<Epassive>티모의 기본 공격에는 중독 효과가 적용되어 추가로 마법 피해를 입히고 4초에 걸쳐 마법 피해를 입힙니다.</Epassive>
+		<Eplus>이 독은 정글 몬스터에게 150%의 피해를 입힙니다.</Eplus>
+		<Rimg>images/skills/teemo/teemoE.png</Rimg>
+		<Rname>유독성 함정</Rname>
+		<Rinfo>티모가 밟으면 폭발하는 버섯 함정을 던집니다. 함정은 둔화시키며 4초 동안 마법 피해를 입히고 적의 모습을 드러냅니다.&lt;br&gt;&lt;br&gt;
+함정은 5분 동안 은신 상태로 유지됩니다. 버섯 위에 또 버섯을 던지면 튕긴 후 자리에 떨어집니다. 이 스킬은 일정량까지 충전됩니다.(일정 시간마다 충전)</Rinfo>
+	</champion>
+	<champion>
+		<championName>피들스틱</championName>
+		<roleGroup>마법사</roleGroup>
+		<area>룬테라</area>
+		<line>정글</line>
+		<championFace>images/champion/Fiddlesticks.png</championFace>
+		<championId>fiddlesticks</championId>
+		<dialogue>공포...</dialogue>
+		<dialogueSound>voice/fiddlesticks.mp3</dialogueSound>
+		<Pimg>images/skills/fiddlesticks/fiddlesticksP.png</Pimg>
+		<Pimg>images/skills/fiddlesticks/fiddlesticksPitem.png</Pimg>
+		<Pname>무해한 허수아비</Pname>
+		<Pname>허수아비</Pname>
+		<Pinfo>피들스틱의 장신구는 허수아비로 대체됩니다. 허수아비는 적에게 발각되면 잠시 피들스틱을 흉내 냅니다. 피들스틱이 2초 동안 움직이지 않으면 허수아비를 흉내냅니다. 6레벨이 되면 허수아비가 6초 동안 근처의 와드를 드러냅니다.</Pinfo>
+		<Pitem>팔 수 없음&lt;br&gt;
+&lt;b&gt;사용 시-장신구: &lt;/b&gt;적에게 피들스틱과 똑같아 보이는 허수아비를 설치합니다. 허수아비는 130 ~ 300(리벨 비례)초 동안 유지됩니다. 115 ~ 30초(레벨 비례)마다 1회 충전되며, 최대 2회까지 충전됩니다.&lt;br&gt;
+적 챔피언이 가까이 다가가면 허수아비가 작동되어, 무작위 행동을 취한 후 파괴됩니다.</Pitem>
+		<Qimg>images/skills/fiddlesticks/fiddlesticksQ.png</Qimg>
+		<Qname>공포</Qname>
+		<Qpassive>전투에서 벗어나 적의 시야에 보이지 않을 때나 허수아비인 척할 때 적에게 스킬로 피해를 입히면 대상이 잠시 동안 공포공포에 질립니다.</Qpassive>
+		<Qactive> 잠시 동안 적을 공포공포에 빠뜨리고 대상 현재 체력의 일부에 해당하는 마법 피해를 입힙니다. 최근에 피들스틱에 의해 공포공포에 빠진 대상은 2배에 해당하는 마법 피해를 입습니다.</Qactive>
+		<Qplus>미니언과 정글 몬스터에게는 최대 400의 마법 피해를 입힙니다.</Qplus>
+		<Wimg>images/skills/fiddlesticks/fiddlesticksW.png</Wimg>
+		<Wname>풍작</Wname>
+		<Winfo>피들스틱이 정신을 집중해 2초에 걸쳐 주변 적들의 영혼을 흡수합니다. 그동안 초당 마법 피해를 입히고, 지속 시간이 끝날 때 대상이 잃은 체력의 일부에 해당하는 마법 피해를 입힙니다. 피들스틱은 피해량의 일부에 해당하는 체력을 회복합니다.&lt;br&gt;
+피들스틱이 방해 없이 끝까지 스킬을 사용하면 남은 재사용 대기시간이 60% 감소합니다.</Winfo>
+		<Wplus>체력은 감소되기 전 피해량을 기준으로 회복됩니다.&lt;br&gt;
+몬스터에게는 135%의 피해를 입히고 피해량의 45%만큼 체력을 회복합니다.&lt;br&gt;
+미니언에게는 50%의 피해를 입히고 피해량의 15%만큼 체력을 회복합니다.</Wplus>
+		<Eimg>images/skills/fiddlesticks/fiddlesticksE.png</Eimg>
+		<Ename>수확</Ename>
+		<Einfo>피들스틱이 어둠의 마력을 방출해 마법 피해를 입히고 1.25초 동안 둔화시킵니다. 또한 범위 중심에 있는 적을 지속 시간 동안 침묵시킵니다.</Einfo>
+		<Rimg>images/skills/fiddlesticks/fiddlesticksR.png</Rimg>
+		<Rname>까마귀 폭풍</Rname>
+		<Rinfo>피들스틱이 1.5초 동안 정신을 집중해 대상 지역으로 순간이동한 뒤 살인 까마귀 떼를 불러내어 5초 동안 마법 피해를 입힙니다.</Rinfo>
+	</champion>
+</championinfo>

@@ -1,0 +1,384 @@
+        #champion_container {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #runeterrachampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #demaciachampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #noxsuschampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #bandlecitychampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #bilgewaterchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #shurimachampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #ioniachampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #zaunchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #targonchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #freljordchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        
+        #tankerchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #fighterchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #magicionchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #slayerchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #marksmanchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #controllerchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #topchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #junglechampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #midchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #bottomchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        #supportchampion_container{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:90%; height:90%;
+        }
+        .champion {
+            margin: 0; padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            flex-basis: 100px;
+            width:100px; height:140px;
+            overflow: hidden;
+        }
+        .champinfo{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            width:100%; height:100%;
+        }
+        .champskill{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width:90%; height:100%;
+        }
+        .info{
+            margin: 0; padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-end;
+            width:260px;
+        }
+        #item_a{
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+        #championimg {
+            margin: 0; padding: 0;
+            transform: scale(0.7);
+        }
+        #area_container{
+            left: 0;
+            right: 0;
+            top: 50%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:80%; height:90%;
+        }
+        #area_item{
+            margin: 0; padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width:110px; height:220px;
+            overflow: hidden;
+        }
+        #areaimg{
+            transform: scale(0.5);
+        }
+        #line_container {
+            left: 0;
+            right: 0;
+            top: 50%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:100%; height:90%;
+        }
+        #line_item{
+            margin: 0; padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100px;
+            width:200px; height:180px;
+            overflow: hidden;
+        }
+        #lineimg{
+            transform: scale(0.75);
+        }
+        #role_container {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:100%; height:90%;
+        }
+        #role_item{
+            margin: 0; padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100px;
+            width:200px; height:230px;
+            overflow: hidden;
+        }
+        #roleimg{
+            transform: scale(0.6);
+        }

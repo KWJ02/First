@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>리그오브레전드 백과사전</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script>
+    	$(document).ready(function(){ 
+          $('#abyss').fadeOut(0, function(){
+             $('#abyss').fadeIn(2000);
+          });
+       }); 
+       // 처음 아이콘 등장시키는 효과
+       
+       $(document).ready(function(){
+       	$('#techType2').ready(function(){
+       		$('#buttonevent').hide(100);
+       	});
+       	
+			$('#techType2').click(function(){
+             $('#buttonevent').hide(200);
+          });
+          
+            $('#techType1').click(function(){
+             $('#buttonevent').show(200);
+          });
+          
+          
+       });
+
+    	
+    </script>
+    
+    
+    <style>
+    	#title1 {text-align : center;}
+    	#abyss { bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width:100%; height:100%;}
+            
+    	#image2 {margin: 0; padding: 0;
+    		width:200px; height:200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;}
+    </style>
+    
+</head>
+<body>
+
+<!-- 모드와 룰설명 -->
+<div data-role="page" id="lift">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="../lol.html#home" data-ajax="false" class="ui-btn-left">홈</a>
+        <h1>게임 모드</h1>
+        	<div data-role="navbar" data-theme="b">
+       	   		<ul>
+        	        <li><a href="lift.html#lift" data-ajax="false">소환사의 협곡</a></li>
+        	        <li><a href="abyss.html#abyss" data-ajax="false" class="ui-btn-active">칼바람의 나락</a></li>
+            	    <li><a href="chess.html#chess" data-ajax="false">전략적 팀 전투</a></li>
+      	          <li><a href="event.html#event"data-ajax="false">기타 이벤트 모드</a></li>
+        	    </ul>
+        	</div>
+    	</div> <!-- 헤더밑에 냅바로 부메뉴 -->
+    
+    
+    
+    <div data-role="content" style="text-align:center">
+    	<div id="abyss"><img id="image2" src="abyss.png"></img></div>
+    	<h1 id="title1">칼바람의 나락</h1>
+    	<p><img id="howlingabyss" src="howling.png" width="100%"></p>
+    	<p>칼바람 나락은 프렐요드에서도 가장 춥고 척박한 땅에 자리잡은, 바닥을 가늠할 수 없는 협곡이다.</p><br>
+    	<p><img src="ingameabyss.png" width="100%"></p>
+    	<p>리그 오브 레전드의 무작위 총력전(ARAM) 전용 맵이다.</p>
+    	<p>중립 지역(정글)이 없고 공격로가 단 하나다. 그래서 다른 맵들과 다르게
+    		게임 시작부터 끝까지 한타와 대치의 중요도가 매우 높은 맵이다.</p>
+    		
+    	<p>양 쪽의 다리 끝에 각 팀의 넥서스가 있으며, 다리에는 팀 별로 2개의 포탑과 1개의 억제기가 있고,
+    		넥서스에는 2개의 포탑이 방어하고 있다.</p><br><hr>
+    	
+    	
+    	<div data-role="controlgroup">
+    	<button id="techType1" data-inline="true">펼치기</button>
+    	<button id="techType2" data-inline="true">접기</button>
+    	</div><hr>
+    	    	
+    	<div id="buttonevent">
+    	<h2>칼바람의 나락 특징</h2>
+    	<p><img id="homeimg" src="abysshome.png" width="60%" height="60%"></p>
+    	<p><b style="color : black">제단에서의 HP회복과 상점 이용 불가</b></p>
+    	<p>칼바람 나락에서는 소환사의 협곡과는 다르게
+    		소환사의 제단으로 접근해도 HP가 회복되지 않고,템 구매도 불가능하다.<br><br>
+    		아이템 구매는 '죽은 이후 ~ 부활 이전'까지만 아이템을 살 수 있고,
+    		귀환또한 이 모드에서는 사용할 수 없다.</p><br>
+    	
+    	<p><img src="relic.png" width="60%"></p>
+    	<b style="color : green">체력의 유물</b>
+    	<p>소환사의 제단에서 HP를 회복하지 못하는 대신,<br> 2개의 포탑 언저리에
+    		체력의 유물이 배치되어 있다.<br><br>이것을 먹게되는 챔피언의 HP와 MP를 회복시켜주고,
+    		일정시간 후엔 체력의 유물효과가 적용되는 범위안에 존재하는 챔피언들의 HP와 MP를 회복시킨다.</p><br>
+    		
+    	<p><img src="abyssinhibitor.png" width="60%"></p>
+    	<p><b style="color : purple">하나의 억제기</b></p>
+    	<p>칼바람의 나락은 억제기가 단 하나만 존재하는데,<br>
+    		이것이 터지면 라인 푸쉬면에서 상당히 불리하게 작용한다.</p>
+    	</div>		
+    </div>
+    
+    
+    
+    <div data-role="footer" data-position="fixed" data-theme="b"> <!-- 다른 주메뉴로 옮겨갈수있는 경로 -->
+        <div data-role="navbar">
+        <ul>
+            <li><a href="../champion/champion.html#championPage" data-ajax="false">챔피언</a></li>
+            <li><a href="../item/item.html#itemPage" data-ajax="false">아이템</a></li>
+            <li><a href="../_chess/lolchess.html#lift" data-ajax="false">전략적 팀 전투</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

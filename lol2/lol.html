@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>리그오브레전드 백과사전</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!-- 제이쿼리 -->
+    <script src="login.js"></script>
+    <script>
+        $(document).ready (function(){
+            
+           $('#loginButton').click(function(){
+              $('#logo').fadeIn(2500, function(){
+                 $('#logo').fadeOut(500);
+              });
+              $('#loginContent').fadeOut(2500, function(){
+                 $('#loginContent').fadeIn(500); 
+              });
+           });
+           openDB();  
+           createTable();  
+           
+           $('#store').click(function(){
+              storeTable();
+           });
+           
+        });
+    </script>
+    
+    <!-- css스타일 -->
+    <style>
+        #logo {
+            max-width: 100%;
+            max-height: 100%;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            overflow: auto;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+        }
+        #mainlogo {
+            max-width: 100%;
+            max-height: 100%;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            overflow: auto;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 메인페이지 -->
+<div data-role="page" id="home">
+    
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>LEAGUE OF LEGENDS</h1>
+         <div data-role="navbar" data-theme="b">
+            <ul>
+                <li><a href="champion/champion.html#championPage" data-ajax="false">챔피언</a></li>
+                <li><a href="item/item.html#itemPage" data-ajax="false">아이템</a></li>
+                <li><a href="_chess/lolchess.html#lift" data-ajax="false">전략적 팀 전투</a></li>
+                <li><a href="mode/mode.html" data-ajax="false">게임 모드</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content" id="main_container">
+        <img src="logo.png" id="mainlogo"></img>
+    </div> 
+</div>
+</body>
+</html>

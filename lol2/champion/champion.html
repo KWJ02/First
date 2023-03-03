@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>챔피언</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!-- xml파일 참조 -->
+    <script src="champion.js"></script>
+    <script src="skill.js"></script>
+    <script src="voice.js"></script>
+    <script src="chatdb.js"></script>
+    <script src="comment.js"></script>
+    
+    <!-- css스타일 -->
+    <link rel="stylesheet" href="champion.css"/>
+</head>
+<body>
+
+<!-- 메인 -->
+<div data-role="page" id="championPage">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="../lol.html#home" data-ajax="false" class="ui-btn-left">홈</a>
+        <audio src="LeagueofLegends.mp3" autoplay="autoplay" loop="loop"></audio>
+        <h1>챔피언</h1>
+        <div data-role="navbar" data-theme="b">
+            <ul>
+            	<li><a href="#championPage" class="ui-btn-active">챔피언</a></li>
+                <li><a href="#area">지역</a></li>
+                <li><a href="#role">역할군</a></li>
+                <li><a href="#line">라인</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <div id="champion_container">
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="../item/item.html#itemPage" data-ajax="false">아이템</a></li>
+            <li><a href="../_chess/lolchess.html#lift" data-ajax="false">전략적 팀 전투</a></li>
+            <li><a href="../mode/mode.html#mode" data-ajax="false">게임 모드</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 지역 -->
+<div data-role="page" id="area">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="../lol.html#home" data-ajax="false" class="ui-btn-left">홈</a>
+        <h1>지역</h1>
+        <div data-role="navbar" data-theme="b">
+            <ul>
+                <li><a href="#championPage">챔피언</a></li>
+                <li><a href="#area" class="ui-btn-active">지역</a></li>
+                <li><a href="#role">역할군</a></li>
+                <li><a href="#line">라인</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <div id="area_container">
+            <div id="area_item"><a id="item_a" href="#runeterra"><img id="areaimg" src="images/areas/runeterra.png" />룬테라</a></div>
+            <div id="area_item" style="width:70px;"><a id="item_a" href="#demacia"><img id="areaimg" src="images/areas/demacia.png" />데마시아</a></div>
+            <div id="area_item"><a id="item_a" href="#noxsus"><img id="areaimg" src="images/areas/noxus.png" />녹서스</a></div>
+            <div id="area_item"><a id="item_a" href="#bandlecity"><img id="areaimg" src="images/areas/bandlecity.png" />밴들 시티</a></div>
+            <div id="area_item" style="width:70px;"><a id="item_a" href="#bilgewater"><img id="areaimg" src="images/areas/bilgewater.png" />빌지워터</a></div>
+            <div id="area_item"><a id="item_a" href="#shurima"><img id="areaimg" src="images/areas/shurima.png" />슈리마</a></div>
+            <div id="area_item"><a id="item_a" href="#ionia"><img id="areaimg" src="images/areas/ionia.png" />아이오니아</a></div>
+            <div id="area_item"><a id="item_a" href="#zaun"><img id="areaimg" src="images/areas/zaun.png" />자운</a></div>
+            <div id="area_item"><a id="item_a" href="#targon"><img id="areaimg" src="images/areas/targon.png" />타곤</a></div>
+            <div id="area_item" style="width:70px;"><a id="item_a" href="#freljord"><img id="areaimg" src="images/areas/freljord.png" />프렐요드</a></div>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="../item/item.html#itemPage" data-ajax="false">아이템</a></li>
+            <li><a href="../_chess/lolchess.html#lift" data-ajax="false">전략적 팀 전투</a></li>
+            <li><a href="../mode/mode.html#mode" data-ajax="false">게임 모드</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 역할군 -->
+<div data-role="page" id="role">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="../lol.html#home" data-ajax="false" class="ui-btn-left">홈</a>
+        <h1>역할군</h1>
+        <div data-role="navbar" data-theme="b">
+            <ul>
+                <li><a href="#championPage">챔피언</a></li>
+                <li><a href="#area">지역</a></li>
+                <li><a href="#role" class="ui-btn-active">역할군</a></li>
+                <li><a href="#line">라인</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <div id="role_container">
+            <div id="role_item"><a id="item_a" href="#tanker"><img id="roleimg" src="images/roles/tanker.png" />탱커</a></div>
+            <div id="role_item"><a id="item_a" href="#fighter"><img id="roleimg" src="images/roles/fighter.png" />전사</a></div>
+            <div id="role_item"><a id="item_a" href="#magicion"><img id="roleimg" src="images/roles/magicion.png" />마법사</a></div>
+            <div id="role_item"><a id="item_a" href="#slayer"><img id="roleimg" src="images/roles/slayer.png" />암살자</a></div>
+            <div id="role_item"><a id="item_a" href="#marksman"><img id="roleimg" src="images/roles/marksman.png" />원거리</a></div>
+            <div id="role_item"><a id="item_a" href="#controller"><img id="roleimg" src="images/roles/controller.png" />서포터</a></div>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="../item/item.html#itemPage" data-ajax="false">아이템</a></li>
+            <li><a href="../_chess/lolchess.html#lift" data-ajax="false">전략적 팀 전투</a></li>
+            <li><a href="../mode/mode.html#mode" data-ajax="false">게임 모드</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 라인 -->
+<div data-role="page" id="line">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="../lol.html#home" data-ajax="false" class="ui-btn-left">홈</a>
+        <h1>라인</h1>
+        
+        <div data-role="navbar" data-theme="b">
+            <ul>
+                <li><a href="#championPage">챔피언</a></li>
+                <li><a href="#area">지역</a></li>
+                <li><a href="#role">역할군</a></li>
+                <li><a href="#line" class="ui-btn-active">라인</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <div id="line_container">
+            <div id ="line_item"><a id="item_a" href="#top"><img id="lineimg" src="images/lines/top.png" />탑</a></div>
+            <div id="line_item"><a id="item_a" href="#jungle"><img id="lineimg" src="images/lines/jungle.png" />정글</a></div>
+            <div id="line_item"><a id="item_a" href="#mid"><img id="lineimg" src="images/lines/mid.png" />미드</a></div>
+            <div id="line_item"><a id="item_a" href="#bottom"><img id="lineimg" src="images/lines/bottom.png" />바텀</a></div>
+            <div id="line_item"><a id="item_a" href="#support"><img id="lineimg" src="images/lines/support.png" />서폿</a></div>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="../item/item.html#itemPage" data-ajax="false">아이템</a></li>
+            <li><a href="../_chess/lolchess.html#lift" data-ajax="false">전략적 팀 전투</a></li>
+            <li><a href="../mode/mode.html#mode" data-ajax="false">게임 모드</a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="runeterra">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>룬테라</h1>
+    </div>
+    <div data-role="content">
+        <div id="runeterrachampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="demacia">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>데마시아</h1>
+    </div>
+    <div data-role="content">
+        <div id="demaciachampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="noxsus">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>녹서스</h1>
+    </div>
+    <div data-role="content">
+        <div id="noxsuschampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="bandlecity">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>밴들 시티</h1>
+    </div>
+    <div data-role="content">
+        <div id="bandlecitychampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="bilgewater">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>빌지워터</h1>
+    </div>
+    <div data-role="content">
+        <div id="bilgewaterchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="shurima">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>슈리마</h1>
+    </div>
+    <div data-role="content">
+        <div id="shurimachampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="ionia">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>아이오니아</h1>
+    </div>
+    <div data-role="content">
+        <div id="ioniachampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="zaun">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>자운</h1>
+    </div>
+    <div data-role="content">
+        <div id="zaunchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="targon">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>타곤</h1>
+    </div>
+    <div data-role="content">
+        <div id="targonchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="freljord">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#area" class="ui-btn-left">뒤로가기</a>
+        <h1>프렐요드</h1>
+    </div>
+    <div data-role="content">
+        <div id="freljordchampion_container">
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="tanker">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#role" class="ui-btn-left">뒤로가기</a>
+        <h1>탱커</h1>
+    </div>
+    <div data-role="content">
+        <div id="tankerchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="fighter">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#role" class="ui-btn-left">뒤로가기</a>
+        <h1>전사</h1>
+    </div>
+    <div data-role="content">
+        <div id="fighterchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="magicion">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#role" class="ui-btn-left">뒤로가기</a>
+        <h1>마법사</h1>
+    </div>
+    <div data-role="content">
+        <div id="magicionchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="slayer">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#role" class="ui-btn-left">뒤로가기</a>
+        <h1>암살자</h1>
+    </div>
+    <div data-role="content">
+        <div id="slayerchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="marksman">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#role" class="ui-btn-left">뒤로가기</a>
+        <h1>원거리</h1>
+    </div>
+    <div data-role="content">
+        <div id="marksmanchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="controller">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#role" class="ui-btn-left">뒤로가기</a>
+        <h1>서포터</h1>
+    </div>
+    <div data-role="content">
+        <div id="controllerchampion_container">
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="top">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#line" class="ui-btn-left">뒤로가기</a>
+        <h1>탑</h1>
+    </div>
+    <div data-role="content">
+        <div id="topchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="jungle">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#line" class="ui-btn-left">뒤로가기</a>
+        <h1>정글</h1>
+    </div>
+    <div data-role="content">
+        <div id="junglechampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="mid">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#line" class="ui-btn-left">뒤로가기</a>
+        <h1>미드</h1>
+    </div>
+    <div data-role="content">
+        <div id="midchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="bottom">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#line" class="ui-btn-left">뒤로가기</a>
+        <h1>바텀</h1>
+    </div>
+    <div data-role="content">
+        <div id="bottomchampion_container">
+        </div>
+    </div>
+</div>
+<div data-role="page" id="support">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-theme="b">
+        <a href="#line" class="ui-btn-left">뒤로가기</a>
+        <h1>탑</h1>
+    </div>
+    <div data-role="content">
+        <div id="supportchampion_container">
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="garen">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="gareninfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="garenP">패시브</button>
+         <button id="garenQ">Q스킬</button>
+         <button id="garenW">W스킬</button>
+         <button id="garenE">E스킬</button>
+         <button id="garenR">R스킬</button>
+     </div>
+     <div data-role="content" id="garenskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="nunu">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="nunuinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="nunuP">패시브</button>
+         <button id="nunuQ">Q스킬</button>
+         <button id="nunuW">W스킬</button>
+         <button id="nunuE">E스킬</button>
+         <button id="nunuR">R스킬</button>
+     </div>
+     <div data-role="content" id="nunuskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="darius">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="dariusinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="dariusP">패시브</button>
+         <button id="dariusQ">Q스킬</button>
+         <button id="dariusW">W스킬</button>
+         <button id="dariusE">E스킬</button>
+         <button id="dariusR">R스킬</button>
+     </div>
+     <div data-role="content" id="dariusskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="diana">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="dianainfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="dianaP">패시브</button>
+         <button id="dianaQ">Q스킬</button>
+         <button id="dianaW">W스킬</button>
+         <button id="dianaE">E스킬</button>
+         <button id="dianaR">R스킬</button>
+     </div>
+     <div data-role="content" id="dianaskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="ryze">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="ryzeinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="ryzeP">패시브</button>
+         <button id="ryzeQ">Q스킬</button>
+         <button id="ryzeW">W스킬</button>
+         <button id="ryzeE">E스킬</button>
+         <button id="ryzeR">R스킬</button>
+     </div>
+     <div data-role="content" id="ryzeskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="lux">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="luxinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="luxP">패시브</button>
+         <button id="luxQ">Q스킬</button>
+         <button id="luxW">W스킬</button>
+         <button id="luxE">E스킬</button>
+         <button id="luxR">R스킬</button>
+     </div>
+     <div data-role="content" id="luxskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="leona">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="leonainfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="leonaP">패시브</button>
+         <button id="leonaQ">Q스킬</button>
+         <button id="leonaW">W스킬</button>
+         <button id="leonaE">E스킬</button>
+         <button id="leonaR">R스킬</button>
+     </div>
+     <div data-role="content" id="leonaskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="masterYi">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="masterYiinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="masterYiP">패시브</button>
+         <button id="masterYiQ">Q스킬</button>
+         <button id="masterYiW">W스킬</button>
+         <button id="masterYiE">E스킬</button>
+         <button id="masterYiR">R스킬</button>
+     </div>
+     <div data-role="content" id="masterYiskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="morgana">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="morganainfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="morganaP">패시브</button>
+         <button id="morganaQ">Q스킬</button>
+         <button id="morganaW">W스킬</button>
+         <button id="morganaE">E스킬</button>
+         <button id="morganaR">R스킬</button>
+     </div>
+     <div data-role="content" id="morganaskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="missFortune">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="missFortuneinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="missFortuneP">패시브</button>
+         <button id="missFortuneQ">Q스킬</button>
+         <button id="missFortuneW">W스킬</button>
+         <button id="missFortuneE">E스킬</button>
+         <button id="missFortuneR">R스킬</button>
+     </div>
+     <div data-role="content" id="missFortuneskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="vayne">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="vayneinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="vayneP">패시브</button>
+         <button id="vayneQ">Q스킬</button>
+         <button id="vayneW">W스킬</button>
+         <button id="vayneE">E스킬</button>
+         <button id="vayneR">R스킬</button>
+     </div>
+     <div data-role="content" id="vayneskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="blitzcrank">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="blitzcrankinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="blitzcrankP">패시브</button>
+         <button id="blitzcrankQ">Q스킬</button>
+         <button id="blitzcrankW">W스킬</button>
+         <button id="blitzcrankE">E스킬</button>
+         <button id="blitzcrankR">R스킬</button>
+     </div>
+     <div data-role="content" id="blitzcrankskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="sion">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="sioninfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="sionP">패시브</button>
+         <button id="sionQ">Q스킬</button>
+         <button id="sionW">W스킬</button>
+         <button id="sionE">E스킬</button>
+         <button id="sionR">R스킬</button>
+     </div>
+     <div data-role="content" id="sionskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="soraka">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="sorakainfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="sorakaP">패시브</button>
+         <button id="sorakaQ">Q스킬</button>
+         <button id="sorakaW">W스킬</button>
+         <button id="sorakaE">E스킬</button>
+         <button id="sorakaR">R스킬</button>
+     </div>
+     <div data-role="content" id="sorakaskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="ahri">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="ahriinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="ahriP">패시브</button>
+         <button id="ahriQ">Q스킬</button>
+         <button id="ahriW">W스킬</button>
+         <button id="ahriE">E스킬</button>
+         <button id="ahriR">R스킬</button>
+     </div>
+     <div data-role="content" id="ahriskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="alistar">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="alistarinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="alistarP">패시브</button>
+         <button id="alistarQ">Q스킬</button>
+         <button id="alistarW">W스킬</button>
+         <button id="alistarE">E스킬</button>
+         <button id="alistarR">R스킬</button>
+     </div>
+     <div data-role="content" id="alistarskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="annie">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="annieinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="annieP">패시브</button>
+         <button id="annieQ">Q스킬</button>
+         <button id="annieW">W스킬</button>
+         <button id="annieE">E스킬</button>
+         <button id="annieR">R스킬</button>
+     </div>
+     <div data-role="content" id="annieskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="sivir">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="sivirinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="sivirP">패시브</button>
+         <button id="sivirQ">Q스킬</button>
+         <button id="sivirW">W스킬</button>
+         <button id="sivirE">E스킬</button>
+         <button id="sivirR">R스킬</button>
+     </div>
+     <div data-role="content" id="sivirskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="ashe">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="asheinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="asheP">패시브</button>
+         <button id="asheQ">Q스킬</button>
+         <button id="asheW">W스킬</button>
+         <button id="asheE">E스킬</button>
+         <button id="asheR">R스킬</button>
+     </div>
+     <div data-role="content" id="asheskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="warwick">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="warwickinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="warwickP">패시브</button>
+         <button id="warwickQ">Q스킬</button>
+         <button id="warwickW">W스킬</button>
+         <button id="warwickE">E스킬</button>
+         <button id="warwickR">R스킬</button>
+     </div>
+     <div data-role="content" id="warwickskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="jax">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="jaxinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="jaxP">패시브</button>
+         <button id="jaxQ">Q스킬</button>
+         <button id="jaxW">W스킬</button>
+         <button id="jaxE">E스킬</button>
+         <button id="jaxR">R스킬</button>
+     </div>
+     <div data-role="content" id="jaxskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="zed">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="zedinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="zedP">패시브</button>
+         <button id="zedQ">Q스킬</button>
+         <button id="zedW">W스킬</button>
+         <button id="zedE">E스킬</button>
+         <button id="zedR">R스킬</button>
+     </div>
+     <div data-role="content" id="zedskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="katarina">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="katarinainfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="katarinaP">패시브</button>
+         <button id="katarinaQ">Q스킬</button>
+         <button id="katarinaW">W스킬</button>
+         <button id="katarinaE">E스킬</button>
+         <button id="katarinaR">R스킬</button>
+     </div>
+     <div data-role="content" id="katarinaskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="kayle">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="kayleinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="kayleP">패시브</button>
+         <button id="kayleQ">Q스킬</button>
+         <button id="kayleW">W스킬</button>
+         <button id="kayleE">E스킬</button>
+         <button id="kayleR">R스킬</button>
+     </div>
+     <div data-role="content" id="kayleskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="talon">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="taloninfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="talonP">패시브</button>
+         <button id="talonQ">Q스킬</button>
+         <button id="talonW">W스킬</button>
+         <button id="talonE">E스킬</button>
+         <button id="talonR">R스킬</button>
+     </div>
+     <div data-role="content" id="talonskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="tristana">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="tristanainfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="tristanaP">패시브</button>
+         <button id="tristanaQ">Q스킬</button>
+         <button id="tristanaW">W스킬</button>
+         <button id="tristanaE">E스킬</button>
+         <button id="tristanaR">R스킬</button>
+     </div>
+     <div data-role="content" id="tristanaskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="tryndamere">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="tryndamereinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="tryndamereP">패시브</button>
+         <button id="tryndamereQ">Q스킬</button>
+         <button id="tryndamereW">W스킬</button>
+         <button id="tryndamereE">E스킬</button>
+         <button id="tryndamereR">R스킬</button>
+     </div>
+     <div data-role="content" id="tryndamereskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="twistedFate">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="twistedFateinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="twistedFateP">패시브</button>
+         <button id="twistedFateQ">Q스킬</button>
+         <button id="twistedFateW">W스킬</button>
+         <button id="twistedFateE">E스킬</button>
+         <button id="twistedFateR">R스킬</button>
+     </div>
+     <div data-role="content" id="twistedFateskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="teemo">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="teemoinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="teemoP">패시브</button>
+         <button id="teemoQ">Q스킬</button>
+         <button id="teemoW">W스킬</button>
+         <button id="teemoE">E스킬</button>
+         <button id="teemoR">R스킬</button>
+     </div>
+     <div data-role="content" id="teemoskill" class="champskill"></div>
+     </div>
+</div>
+<div data-role="page" id="fiddlesticks">
+    <div data-role="header" data-position="fixed" data-add-back-btn="true" data-back-btn-text="뒤로가기" data-theme="b">
+        <h3>챔피언 정보</h3>
+    </div>
+     <div data-role="content" class="champinfo">
+     <div id="fiddlesticksinfo"></div>
+     <div data-role="controlgroup" data-type="horizontal">
+         <button id="fiddlesticksP">패시브</button>
+         <button id="fiddlesticksQ">Q스킬</button>
+         <button id="fiddlesticksW">W스킬</button>
+         <button id="fiddlesticksE">E스킬</button>
+         <button id="fiddlesticksR">R스킬</button>
+     </div>
+     <div data-role="content" id="fiddlesticksskill" class="champskill"></div>
+     </div>
+</div>
+
+</body>
+</html>
